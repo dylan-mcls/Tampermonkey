@@ -9,6 +9,9 @@
 // @grant        none
 // ==/UserScript==
 
+//Css variables
+var customCss = ".customCss{}";
+
 function cLog(str) {
     console.log(str);
 }
@@ -30,6 +33,10 @@ function createElements() {
     $('#saveBtn').click(function () {
         save(); //save button function
     });
+}
+
+function save(){
+	cLog("Save");
 }
 
 createElements();

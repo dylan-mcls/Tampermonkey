@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Redbubble Download Promotional Images
 // @namespace    http://tampermonkey.net/
-// @version      0.3.2
+// @version      0.3.3
 // @description  Downloads all promo images from a RedBubble promotion page
 // @author       Dylan Nonya
 // @match        https://www.redbubble.com/studio/promote/*
@@ -17,8 +17,6 @@ function cLog(str) {
 }
 
 function createElements() {
-    var select = $("node_modules--redbubble-design-system-react-Box-styles__box--206r9.node_modules--redbubble-design-system-react-Text-styles__text--NLf2i.node_modules--redbubble-design-system-react-Text-styles__display1--2XY2m");
-
     //Create Download div
     $(select).append('TEST! <span id="downloadAllDiv">');
 
@@ -35,9 +33,24 @@ function createElements() {
     });
 }
 
-function save(){
-	cLog("Save");
+function save() {
+    cLog("Save");
 }
 
-createElements();
+function waitForElement(selector, callback) {
+    if ($(selector).length) {
+        callback();
+    } else {
+        setTimeout(function () {
+            waitForEl(selector, callback);
+        }, 100);
+    }
+}
+
+function run(){
+	var select = $("node_modules--redbubble-design-system-react-Box-styles__box--206r9.node_modules--redbubble-design-system-react-Text-styles__text--NLf2i.node_modules--redbubble-design-system-react-Text-styles__display1--2XY2m");
+	waitForElements(select, createElements); //When select exists will run create elements.
+}
+
+run();
 cLog("Test");

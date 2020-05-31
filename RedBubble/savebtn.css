@@ -13,7 +13,7 @@
 	padding:6px 24px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #ffffff;
-	margin: 3px;
+	margin-bottom: 20px;
 }
 .saveBtn:hover {
 	background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);

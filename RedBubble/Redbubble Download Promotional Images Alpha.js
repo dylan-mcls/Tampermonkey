@@ -12,12 +12,12 @@
 // @run-at document-end
 // ==/UserScript==
 
-console.log('start: add CSS');
+//Add custom css
 var cssTxt = GM_getResourceText("customCSS");
-console.log(cssTxt);
 GM_addStyle(cssTxt);
-console.log('done: add CSS');
 
+//returns a 12 hour clock timestamp
+//MM/DD/YYYY HH:MM:SS AM/PM
 function timestamp() {
     var cd = new Date(); //current date
     var month = (cd.getMonth() + 1);
@@ -43,7 +43,7 @@ function timestamp() {
         sec = "0" + sec;
     }
 
-    var data = month + "/"
+    var stamp = month + "/"
          + date + "/"
          + year + " "
          + hours + ":"
@@ -51,39 +51,42 @@ function timestamp() {
          + sec + " "
          + amBool;
 
-    return data;
+    return stamp;
 }
 
-function cLog(log) {
-    var ts = timestamp();
-
-    var call = cLog.caller.name;
+//Custom console log, will output caller function and a timestamp in addition to each log
+function logger(data) {
+	var call = logger.caller.name; //get caller function
+    var ts = timestamp(); //get a timestamp
+    
+	//Log caller function, timestamp, and log data
     console.log(
         "Caller Function | " + call
          + "\nTimestamp | " + ts
-         + "\n	Log | " + log);
+         + "\n	Log | " + data);
 }
 
+//Creates an element and appendeds it to selector
 function createElements(selector) {
-    cLog(selector);
+    logger(selector);
 
     //Create Download div
-    $(selector).append('<div id="downloadAll">');
+    $(selector).append('<div class="downloadAll">');
 
     //apply css for class customCss
-    $('#downloadAll').append('<input type="button" value="Save All" class="saveBtn"/> '); //Save Settings Button
+    $('.downloadAll').append('<input type="button" value="Save All" class="saveBtn"/> '); //Save Settings Button
 
     //Close div
     $(selector).append('</div>'); //close chainChecker div
 
     //Save UI Button
-    $('#saveBtn').click(function () {
+    $('.saveBtn').click(function () {
         save(); //save button function
     });
 }
 
 function save() {
-    cLog("Save");
+    logger("Save");
 }
 
 //waits for a jQuery element to exist then runs callback function
@@ -100,10 +103,10 @@ function waitForElement(selector, callback, ms) {
 
 function run() {
 
-    cLog("run start");
+    logger("run start");
     var select = ".node_modules--redbubble-design-system-react-Box-styles__box--206r9.node_modules--redbubble-design-system-react-Text-styles__text--NLf2i.node_modules--redbubble-design-system-react-Text-styles__display1--2XY2m";
     waitForElement(select, createElements, 100);
-    cLog("run end");
+    logger("run end");
 }
 
 run();

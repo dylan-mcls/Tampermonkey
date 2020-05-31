@@ -68,7 +68,7 @@ function createElements(selector) {
     cLog(selector);
 
     //Create Download div
-    $(selector).append('<br /><div id="downloadAll">');
+    $(selector).append('<div id="downloadAll">');
 
     //apply css for class customCss
     $('#downloadAll').append('<input type="button" value="Save All" class="saveBtn"/> '); //Save Settings Button

@@ -3,7 +3,7 @@
 // @namespace    http://tampermonkey.net/
 // @version      0.1
 // @description  Downloads all promo images from a RedBubble promotion page
-// @author       Dylan Banta
+// @author       Dylan Nonya
 // @match        https://www.redbubble.com/studio/promote/*
 // @require      https://code.jquery.com/jquery-3.5.1.min.js
 // @require      http://ajax.googleapis.com/ajax/libs/jquery/--version--/jquery.min.js

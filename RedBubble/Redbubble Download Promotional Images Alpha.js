@@ -20,7 +20,7 @@ function createElements() {
     var select = $("node_modules--redbubble-design-system-react-Box-styles__box--206r9.node_modules--redbubble-design-system-react-Text-styles__text--NLf2i.node_modules--redbubble-design-system-react-Text-styles__display1--2XY2m");
 
     //Create Download div
-    $(select).append(' <span id="downloadAllDiv">');
+    $(select).append('TEST! <span id="downloadAllDiv">');
 
     //Create CSS Styles
     $('#downloadAllDiv').append('<style>' + customCss + '</style>'); //apply css for class customCss

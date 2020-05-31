@@ -6,9 +6,17 @@
 // @author       Dylan Nonya
 // @match        https://www.redbubble.com/studio/promote/*
 // @require      https://code.jquery.com/jquery-3.5.1.min.js
-// @grant        none
+// @resource		 customCSS https://raw.githubusercontent.com/DylanBanta/Tampermonkey/master/RedBubble/savebtn.css
+// @grant         GM_getResourceText
+// @grant         GM_addStyle
 // @run-at document-end
 // ==/UserScript==
+
+console.log('start: add CSS');
+var cssTxt = GM_getResourceText("customCSS");
+console.log(cssTxt);
+GM_addStyle(cssTxt);
+console.log('done: add CSS');
 
 function timestamp() {
     var cd = new Date(); //current date
@@ -58,15 +66,12 @@ function cLog(log) {
 
 function createElements(selector) {
     cLog(selector);
-    //Css variables
-    var cssHref = "";
 
     //Create Download div
     $(selector).append('<span id="downloadAllDiv">');
 
-    //Create CSS Styles
-    $('#downloadAllDiv').append('<link rel="stylesheet" href="' + cssHref + '">'); //apply css for class customCss
-    $('#downloadAllDiv').append('<input type="button" value="Save All" class="customCss" id="saveBtn"/> '); //Save Settings Button
+    //apply css for class customCss
+    $('#downloadAllDiv').append('<input type="button" value="Save All" class="saveBtn"/> '); //Save Settings Button
 
     //Close div
     $(selector).append('</span>'); //close chainChecker div

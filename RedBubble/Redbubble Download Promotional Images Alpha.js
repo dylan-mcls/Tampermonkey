@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Redbubble Download Promotional Images
 // @namespace    http://tampermonkey.net/
-// @version      0.3.3.1
+// @version      0.3.3.2
 // @description  Downloads all promo images from a RedBubble promotion page
 // @author       Dylan Nonya
 // @match        https://www.redbubble.com/studio/promote/*
@@ -38,6 +38,7 @@ function save() {
 }
 
 function waitForElement(selector, callback) {
+	cLog("Wait for element: " + selector);
     if ($(selector).length) {
         callback();
     } else {

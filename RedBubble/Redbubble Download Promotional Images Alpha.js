@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Redbubble Download Promotional Images
 // @namespace    http://tampermonkey.net/
-// @version      0.3.4
+// @version      0.4.0
 // @description  Downloads all promo images from a RedBubble promotion page
 // @author       Dylan Nonya
 // @match        https://www.redbubble.com/studio/promote/*

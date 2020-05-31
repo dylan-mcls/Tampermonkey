@@ -1,0 +1,12 @@
+Wait for Page to Load
+Add save all button
+
+Find all Select (...) buttons
+	for i < = Select Buttons i++
+	Click Button i
+	Wait
+	Click Download Images
+	Wait
+	Find All Download Buttons
+		for j <= Download Buttons j++
+		Download img j

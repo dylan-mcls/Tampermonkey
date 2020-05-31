@@ -12,6 +12,9 @@
 // @run-at document-end
 // ==/UserScript==
 
+var debug = true;
+var ms = 100; //number of milliseconds for timers
+
 //Add custom css
 var cssTxt = GM_getResourceText("customCSS");
 GM_addStyle(cssTxt);
@@ -55,38 +58,31 @@ function timestamp() {
 }
 
 //Custom console log, will output caller function and a timestamp in addition to each log
-function logger(data) {
-	var call = logger.caller.name; //get caller function
-    var ts = timestamp(); //get a timestamp
-    
-	//Log caller function, timestamp, and log data
-    console.log(
-        "Caller Function | " + call
-         + "\nTimestamp | " + ts
-         + "\n	Log | " + data);
+//forceOn overload is not required, if passed true the logger will output even if debug is false
+function logger(data, forceOn) {
+
+    if (forceOn == null) { //check forceOn
+        forceOn = false;
+    }
+
+    if (debug || forceOn) { //if debug or forceOn are true
+        var call = logger.caller.name; //get caller function
+        var ts = timestamp(); //get a timestamp
+
+        //Log caller function, timestamp, and log data
+        console.log(
+            "Caller Function | " + call
+             + "\nTimestamp | " + ts
+             + "\n	Log | " + data);
+    }
 }
 
-//Creates an element and appendeds it to selector
-function createElements(selector) {
+//Takes strings of html elements and appendeds it to the selector
+function createElements(elements, selector) {
     logger(selector);
 
-    //Create Download div
-    $(selector).append('<div class="downloadAll">');
-
-    //apply css for class customCss
-    $('.downloadAll').append('<input type="button" value="Save All" class="saveBtn"/> '); //Save Settings Button
-
-    //Close div
-    $(selector).append('</div>'); //close chainChecker div
-
-    //Save UI Button
-    $('.saveBtn').click(function () {
-        save(); //save button function
-    });
-}
-
-function save() {
-    logger("Save");
+    //append element to selector
+    $(selector).append(elements);
 }
 
 //waits for a jQuery element to exist then runs callback function
@@ -101,12 +97,36 @@ function waitForElement(selector, callback, ms) {
     }
 }
 
-function run() {
-
-    logger("run start");
-    var select = ".node_modules--redbubble-design-system-react-Box-styles__box--206r9.node_modules--redbubble-design-system-react-Text-styles__text--NLf2i.node_modules--redbubble-design-system-react-Text-styles__display1--2XY2m";
-    waitForElement(select, createElements, 100);
-    logger("run end");
+//saveBtn function
+function save() {
+    logger("Enter Save");
 }
 
+//Creates the save button
+function createSave(select) {
+    logger("createSave Start");
+    var saveButtonElement = '<div><input type="button" value="Save All" class="saveBtn"/></div>'; //saveBtn html
+
+    //run createElements with saveButtonElement as element, and select as append location
+    createElements(saveButtonElement, select);
+
+    //Add save() function to btn click
+    $('.saveBtn').click(function () {
+        save(); //save button function
+    });
+    logger("createSave end");
+}
+
+//will be run when script loads
+function run() {
+    logger("run Start");
+
+    var select = ".node_modules--redbubble-design-system-react-Box-styles__box--206r9.node_modules--redbubble-design-system-react-Text-styles__text--NLf2i.node_modules--redbubble-design-system-react-Text-styles__display1--2XY2m";
+
+    //check every ms for select to exist, when exists runs createSave
+    waitForElement(select, createSave, ms);
+    logger("run End");
+}
+
+//When script loads run();
 run();

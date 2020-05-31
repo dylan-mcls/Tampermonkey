@@ -1,5 +1,5 @@
-Wait for Page to Load
-Add save all button
+Wait for Page to Load //DONE
+Add save all button //DONE
 
 Find all Select (...) buttons
 	for i < = Select Buttons i++

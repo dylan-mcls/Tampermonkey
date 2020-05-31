@@ -37,7 +37,7 @@ function save() {
     cLog("Save");
 }
 
-function waitForElement(selector, callback) {
+function waitForElements(selector, callback) {
 	cLog("Wait for element: " + selector);
     if ($(selector).length) {
         callback();

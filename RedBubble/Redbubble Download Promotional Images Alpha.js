@@ -68,13 +68,13 @@ function createElements(selector) {
     cLog(selector);
 
     //Create Download div
-    $(selector).append('<span id="downloadAllDiv">');
+    $(selector).append('<br /><div id="downloadAll">');
 
     //apply css for class customCss
-    $('#downloadAllDiv').append('<input type="button" value="Save All" class="saveBtn"/> '); //Save Settings Button
+    $('#downloadAll').append('<input type="button" value="Save All" class="saveBtn"/> '); //Save Settings Button
 
     //Close div
-    $(selector).append('</span>'); //close chainChecker div
+    $(selector).append('</div>'); //close chainChecker div
 
     //Save UI Button
     $('#saveBtn').click(function () {

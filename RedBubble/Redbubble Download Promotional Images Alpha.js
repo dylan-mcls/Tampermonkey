@@ -50,6 +50,7 @@ function waitForElement(selector, callback) {
 function run(){
 	var select = $("node_modules--redbubble-design-system-react-Box-styles__box--206r9.node_modules--redbubble-design-system-react-Text-styles__text--NLf2i.node_modules--redbubble-design-system-react-Text-styles__display1--2XY2m");
 	waitForElements(select, createElements); //When select exists will run create elements.
+	cLog("RUN");
 }
 
 run();

@@ -6,6 +6,7 @@
 // @author       Dylan Nonya
 // @match        https://www.redbubble.com/studio/promote/*
 // @require      https://code.jquery.com/jquery-3.5.1.min.js
+// @require      http://creativecouple.github.com/jquery-timing/jquery-timing.min.js
 // @resource		 customCSS https://raw.githubusercontent.com/DylanBanta/Tampermonkey/master/RedBubble/savebtn.css
 // @grant         GM_getResourceText
 // @grant         GM_addStyle
@@ -61,26 +62,21 @@ function timestamp() {
 //forceOn overload is not required, if passed true the logger will output even if debug is false
 function logger(data, forceOn) {
 
-    if (forceOn == null) { //check forceOn
-        forceOn = false;
-    }
-
-    if (debug || forceOn) { //if debug or forceOn are true
+    if (debug && forceOn != false || forceOn) { //if debug or forceOn are true
         var call = logger.caller.name; //get caller function
         var ts = timestamp(); //get a timestamp
 
         //Log caller function, timestamp, and log data
         console.log(
-            "Caller Function | " + call
-             + "\nTimestamp | " + ts
-             + "\n	Log | " + data);
+            "Log | " + data
+             + "\n	Caller Function | " + call
+             + "\n	Timestamp | " + ts);
     }
 }
 
 //Takes strings of html elements and appendeds it to the selector
 function createElements(elements, selector) {
     logger(selector);
-
     //append element to selector
     $(selector).append(elements);
 }
@@ -97,9 +93,100 @@ function waitForElement(selector, callback, ms) {
     }
 }
 
+//https://stackoverflow.com/questions/15504921/asynchronous-loop-of-jquery-deferreds-promises?answertab=votes#tab-top
+function doTask(taskNum) {
+	logger("doTask Enter");
+    var time = Math.floor(Math.random() * 3000);
+
+    setTimeout(function () {
+        console.log(taskNum);
+        dequeTask();
+    }, time)
+}
+
+function createTask(taskNum) {
+	logger("createTask Enter");
+    return function () {
+        doTask(taskNum);
+    }
+}
+
+function queueTask(tasks) {
+	logger("queTask Enter");
+    //Loops through task array
+    for (var i in tasks) {
+        $(document).queue('tasks', function(){
+			createTask(tasks[i]);
+		});
+    }
+
+    //Add a logger to the end of the task stating that all tasks have been completed
+    $(document).queue('tasks', function () {
+        logger("All tasks completed");
+    });
+}
+
+function dequeueTask() {
+    $(document).dequeue('tasks');
+}
+
+//Feed class string for html elemnt, returns array of all matching elements
+function findElement(element) {
+    //Create an array of all (...) settings buttons
+    var elemCount = $(element).length;
+    var elemArr = new Array(elemCount);
+    elemArr = $(element).each($).toArray();
+
+    return elemArr;
+}
+
+function clickBtn(btn) {
+	logger("click");
+    btn.click();
+}
+
+function ariaHidden() {
+    var dlImg = ".node_modules--redbubble-design-system-react-Popover-styles__popover--3R4aF.node_modules--redbubble-design-system-react-Popover-styles__medium--PRJnY";
+
+    var dlArr = findElement(dlImg);
+    for (var i = 0; i < dlArr.length; i++) {
+		logger("i | " + i + "\ndlArr | " + $(dlArr)[i]);
+	}
+}
+
 //saveBtn function
 function save() {
     logger("Enter Save");
+
+    var btns = ".node_modules--redbubble-design-system-react-Button-styles__button--1wSNn.node_modules--redbubble-design-system-react-Button-styles__neutral--17MuV.node_modules--redbubble-design-system-react-Button-styles__circle--3zgIv.node_modules--redbubble-design-system-react-Button-styles__small--127Kw";
+
+    var btnArr = findElement(btns);
+
+    var taskArr = [];
+
+	for (var i in btnArr){
+		if (i == 0) {
+			clickBtn(btnArr[i]);
+            taskArr.push(ariaHidden);
+			queueTask(taskArr);
+        }
+	}
+
+    /*
+    TODO Functions for task list
+    Find all select buttons //Task 0
+    Return current button //Task 0{ LOOP START
+    Click Current Button //Task 1
+    WAIT for button click //Task 2
+    Find aria-hidden false Download Images Button //Task 2
+    Click Download Images Button //Task 2
+    WAIT for button click //Task 3
+    Find all download buttons for selected options //Task 3
+    Add EACH option to the queue //Task 4, 5, 6, 7, and 8 (in thie pseudocode example)
+    Close current Download page. //Task 9
+    } LOOP again starting at task 10 until task 0 is complete
+     */
+
 }
 
 //Creates the save button

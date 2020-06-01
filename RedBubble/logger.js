@@ -1,6 +1,16 @@
+// ==UserScript==
+// @name         Logger
+// @namespace    http://tampermonkey.net/
+// @version      1.0
+// @description  Basic Logger Util for my UserScripts
+// @author       Dylan Banta
+// @grant        none
+// ==/UserScript==
+
 /*
 add log function to userscript
-forceOn overload will not throw err if null, if true log will be forced on
+forceOn overload will not throw err if null
+if forceOn == true log will still appear 
 
 function log(logs, forceOn){
 	var debug = true;

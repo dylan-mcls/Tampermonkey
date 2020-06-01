@@ -4,9 +4,10 @@ add log function to userscript
 forceOn overload will not throw err if null
 if forceOn == true log will still appear 
 
-function log(logs, forceOn){
-	var debug = true;
-	logger(logs, debug, forceOn);
+function log(logs, forceOn) {
+	var call = log.caller.name; //get caller function
+    var debug = true;
+    logger(logs, debug, call, forceOn);
 }
 */
 
@@ -50,10 +51,9 @@ function timestamp() {
 
 //Custom console log, will output caller function and a timestamp in addition to each log
 //forceOn overload is not required, if passed true the logger will output even if debug is false
-function logger(logs, debug, forceOn) {
+function logger(logs, debug, call, forceOn) {
 
     if (debug && forceOn != false || forceOn) { //if debug or forceOn are true
-        var call = logger.caller.name; //get caller function
         var ts = timestamp(); //get a timestamp
 
         //Log caller function, timestamp, and log logs

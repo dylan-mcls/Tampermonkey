@@ -1,12 +1,12 @@
 // ==UserScript==
 // @name         Redbubble Download Promotional Images
 // @namespace    http://tampermonkey.net/
-// @version      0.4.0
+// @version      0.4.1
 // @description  Downloads all promo images from a RedBubble promotion page
 // @author       Dylan Nonya
 // @match        https://www.redbubble.com/studio/promote/*
-// @require 	 https://greasyfork.org/scripts/404462-my-logger-util/code/My_Logger_Util.js?version=811167
-// @require 	 https://greasyfork.org/scripts/404464-task-array-util/code/Task_Array_Util.js?version=811172
+// @require      https://greasyfork.org/scripts/404462-my-logger-util/code/My_Logger_Util.js?version=811196
+// @require      https://greasyfork.org/scripts/404464-task-array-util/code/Task_Array_Util.js?version=811199
 // @require      https://code.jquery.com/jquery-3.5.1.min.js
 // @require      http://creativecouple.github.com/jquery-timing/jquery-timing.min.js
 // @resource 	 customCSS https://raw.githubusercontent.com/DylanBanta/Tampermonkey/master/RedBubble/savebtn.css
@@ -22,8 +22,9 @@ var cssTxt = GM_getResourceText("customCSS");
 GM_addStyle(cssTxt);
 
 function log(logs, forceOn) {
+	var call = log.caller.name; //get caller function
     var debug = true;
-    logger(logs, debug, forceOn);
+    logger(logs, debug, call, forceOn);
 }
 
 //Takes strings of html elements and appendeds it to the selector
@@ -81,7 +82,7 @@ function save() {
 
     var btnArr = arryElements(btns);
 	
-	var taskArr = [logger(1), logger(2), logger(3)];
+	var taskArr = [0,1,2];
 	
 	queueTask(taskArr);
 	

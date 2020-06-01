@@ -1,11 +1,3 @@
-// ==UserScript==
-// @name         Task_Array_Util
-// @namespace    http://tampermonkey.net/
-// @version      1.0
-// @description  //https://stackoverflow.com/questions/15504921/asynchronous-loop-of-jquery-deferreds-promises?answertab=votes#tab-top
-// @author       Dylan Banta
-// @grant        none
-// ==/UserScript==
 
 /*
 	TODO Description

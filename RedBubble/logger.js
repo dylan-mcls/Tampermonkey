@@ -1,11 +1,3 @@
-// ==UserScript==
-// @name         My_Logger_Util
-// @namespace    http://tampermonkey.net/
-// @version      1.0
-// @description  Basic Logger Util for my UserScripts
-// @author       Dylan Banta
-// @grant        none
-// ==/UserScript==
 
 /*
 add log function to userscript

@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Logger
+// @name         My_Logger_Util
 // @namespace    http://tampermonkey.net/
 // @version      1.0
 // @description  Basic Logger Util for my UserScripts

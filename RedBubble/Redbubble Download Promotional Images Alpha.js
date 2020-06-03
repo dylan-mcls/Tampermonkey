@@ -16,6 +16,13 @@
 // @run-at document-end
 // ==/UserScript==
 
+//Calls custom log util
+function log(logs, forceOn) {
+    var call = log.caller.name; //get caller function
+    var debug = true;
+    logger(logs, debug, call, forceOn);
+}
+
 const ms = 100; //number of milliseconds for timers
 
 //const class elements from RedBubble
@@ -34,18 +41,48 @@ var closeBtn = ".node_modules--redbubble-design-system-react-Modal-ModalOverlay-
 const downshift = "#downshift-";
 const item0 = "-item-0";
 
-
-
-//Add custom css
+//Custom css
 var cssTxt = GM_getResourceText("customCSS");
 GM_addStyle(cssTxt);
 
-function log(logs, forceOn) {
-    var call = log.caller.name; //get caller function
-    var debug = true;
-    logger(logs, debug, call, forceOn);
+//will be run when script loads
+function run() {
+    log("run Enter", true);
+    //check every ms for select to exist, when exists runs createSaveBtn
+    waitForElement(settingsBtns, createSaveBtn);
 }
 
+//Creates the save button on the page
+function createSaveBtn(select) {
+    log("createSaveBtn Enter", true);
+    var saveButtonElement = '<div><input type="button" value="Save All" class="saveBtn"/></div>'; //saveBtn html
+
+    //run createElements with saveButtonElement as element, and select as append location
+    createElements(saveButtonElement, select);
+
+    //Add save() function to btn click
+    $('.saveBtn').click(function () {
+        save(); //save button function
+    });
+}
+
+//saveBtn function
+function save() {
+    log("save Enter", true);
+
+    var btnArr = arryElements(dwnlBtns);
+    var taskArr = [];
+    var data;
+
+    for (var i = 0; i < btnArr.length; i++) {
+        if (i <= 1) {
+            data = $(btnArr)[i];
+            data.click();
+            waitForAria();
+            downloadImages();
+        }
+    }
+}
 
 function waitForAria() {
     log("waitForAria enter", true);
@@ -71,10 +108,21 @@ function waitForAria() {
     });
 }
 
-function closeDownload() {
-    log("closeDownload enter", true);
-	
-	$(closeBtn).click();
+function downloadImages() {
+    log("downloadImages enter", true);    
+
+    var holder;
+
+	setTimeout(function () {
+        clickDwnlBtns();
+	}, 5000);
+		
+		
+	/*
+	waitForElement(waiter, function () {
+        clickDwnlBtns(modu);
+    });
+	*/
 }
 
 function clickDwnlBtns() {
@@ -93,61 +141,10 @@ function clickDwnlBtns() {
 	}, 1500);
 }
 
-function downloadImages() {
-    log("downloadImages enter", true);    
-
-    var holder;
-
-	setTimeout(function () {
-        clickDwnlBtns();
-	}, 5000);
-		
-		
-	/*
-	waitForElement(waiter, function () {
-        clickDwnlBtns(modu);
-    });
-	*/
-}
-
-//saveBtn function
-function save() {
-    log("save Enter", true);
-
-    var btnArr = arryElements(dwnlBtns);
-    var taskArr = [];
-    var data;
-
-    for (var i = 0; i < btnArr.length; i++) {
-        if (i <= 1) {
-            data = $(btnArr)[i];
-            data.click();
-            waitForAria();
-            downloadImages();
-        }
-    }
-}
-
-//Creates the save button
-function createSaveBtn(select) {
-    log("createSaveBtn Enter", true);
-    var saveButtonElement = '<div><input type="button" value="Save All" class="saveBtn"/></div>'; //saveBtn html
-
-    //run createElements with saveButtonElement as element, and select as append location
-    createElements(saveButtonElement, select);
-
-    //Add save() function to btn click
-    $('.saveBtn').click(function () {
-        save(); //save button function
-    });
-}
-
-//will be run when script loads
-function run() {
-    log("run Enter", true);
-
-    //check every ms for select to exist, when exists runs createSaveBtn
-    waitForElement(settingsBtns, createSaveBtn);
+function closeDownload() {
+    log("closeDownload enter", true);
+	
+	$(closeBtn).click();
 }
 
 //When script loads run();

@@ -1,12 +1,13 @@
 // ==UserScript==
 // @name         Redbubble Download Promotional Images
 // @namespace    http://tampermonkey.net/
-// @version      0.4.2
+// @version      0.4.3
 // @description  (*IN DEVELOPMENT*) Downloads all promo images from a RedBubble promotion page
 // @author       Dylan Nonya
 // @match        https://www.redbubble.com/studio/promote/*
 // @require      https://greasyfork.org/scripts/404462-my-logger-util/code/My_Logger_Util.js?version=811196
 // @require 	 https://greasyfork.org/scripts/404464-task-array-util/code/Task_Array_Util.js?version=811281
+// @require 	 https://greasyfork.org/scripts/404600-my-general-utils/code/My_General_Utils.js?version=812003
 // @require      https://code.jquery.com/jquery-3.5.1.min.js
 // @require 	 https://greasyfork.org/scripts/404470-timing-jquery/code/Timing_JQuery.js?version=811203
 // @resource 	 customCSS https://raw.githubusercontent.com/DylanBanta/Tampermonkey/master/RedBubble/savebtn.css
@@ -45,36 +46,6 @@ function log(logs, forceOn) {
     logger(logs, debug, call, forceOn);
 }
 
-//Takes strings of html elements and appendeds it to the selector
-function createElements(elements, selector) {
-    log("createElements Enter", true);
-    //append element to selector
-    $(selector).append(elements);
-}
-
-//waits for a jQuery element to exist then runs callback function
-//syntax waitForElement(jQuery selector, function onec element exists, timout in milliseconds)
-function waitForElement(selector, callback) {
-    log("waitForElement Enter", true);
-    if ($(selector).length) {
-        callback(selector);
-    } else {
-        setTimeout(function () {
-            waitForElement(selector, callback);
-        }, ms);
-    }
-}
-
-//Feed class string for html elemnt, returns array of all matching elements
-function arryElements(element) {
-    //log("arryElements Enter", true);
-    //Create an array of all (...) settings buttons
-    var elemCount = $(element).length;
-    var elemArr = new Array(elemCount);
-    elemArr = $(element).each($).toArray();
-
-    return elemArr;
-}
 
 function waitForAria() {
     log("waitForAria enter", true);

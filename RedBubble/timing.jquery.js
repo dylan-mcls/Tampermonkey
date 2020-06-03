@@ -1,5 +1,5 @@
 /**
- * code from http://creativecouple.github.io/jquery-timing/jquery-timing.js
+ * code from http: //creativecouple.github.io/jquery-timing/jquery-timing.js
  * timing.jquery.js
  * 
  * JavaScript functions for waiting / repeating / stopping jQuery actions.

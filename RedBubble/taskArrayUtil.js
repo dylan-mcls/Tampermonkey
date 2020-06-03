@@ -24,7 +24,7 @@ function createTask(taskNum){
 
 function queueTask(tasks) {
     log("queueTask Enter!");
-	log(tasks[0]);
+	log(tasks);
     //tasks is an array of functions
     for (var i = 0; i < tasks.length; i++) {
 		log("queueTask i " + i);

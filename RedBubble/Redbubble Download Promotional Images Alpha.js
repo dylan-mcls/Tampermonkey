@@ -2,11 +2,11 @@
 // @name         Redbubble Download Promotional Images
 // @namespace    http://tampermonkey.net/
 // @version      0.4.1
-// @description  Downloads all promo images from a RedBubble promotion page
+// @description  (*IN DEVELOPMENT*) Downloads all promo images from a RedBubble promotion page
 // @author       Dylan Nonya
 // @match        https://www.redbubble.com/studio/promote/*
 // @require      https://greasyfork.org/scripts/404462-my-logger-util/code/My_Logger_Util.js?version=811196
-// @require      https://greasyfork.org/scripts/404464-task-array-util/code/Task_Array_Util.js?version=811199
+// @require 	 https://greasyfork.org/scripts/404464-task-array-util/code/Task_Array_Util.js?version=811281
 // @require      https://code.jquery.com/jquery-3.5.1.min.js
 // @require 	 https://greasyfork.org/scripts/404470-timing-jquery/code/Timing_JQuery.js?version=811203
 // @resource 	 customCSS https://raw.githubusercontent.com/DylanBanta/Tampermonkey/master/RedBubble/savebtn.css
@@ -22,21 +22,22 @@ var cssTxt = GM_getResourceText("customCSS");
 GM_addStyle(cssTxt);
 
 function log(logs, forceOn) {
-	var call = log.caller.name; //get caller function
+    var call = log.caller.name; //get caller function
     var debug = true;
     logger(logs, debug, call, forceOn);
 }
 
 //Takes strings of html elements and appendeds it to the selector
 function createElements(elements, selector) {
-    log(selector);
+    log("createElements Enter", true);
     //append element to selector
     $(selector).append(elements);
 }
 
 //waits for a jQuery element to exist then runs callback function
 //syntax waitForElement(jQuery selector, function onec element exists, timout in milliseconds)
-function waitForElement(selector, callback, ms) {
+function waitForElement(selector, callback) {
+    log("waitForElement Enter", true);
     if ($(selector).length) {
         callback(selector);
     } else {
@@ -48,6 +49,7 @@ function waitForElement(selector, callback, ms) {
 
 //Feed class string for html elemnt, returns array of all matching elements
 function arryElements(element) {
+    //log("arryElements Enter", true);
     //Create an array of all (...) settings buttons
     var elemCount = $(element).length;
     var elemArr = new Array(elemCount);
@@ -57,44 +59,102 @@ function arryElements(element) {
 }
 
 function clickBtn(btn) {
-    log("click");
+    log("clickBtn Enter", true);
     btn.click();
 }
 
-function ariaHidden() {
-    var dlImg = ".node_modules--redbubble-design-system-react-Popover-styles__popover--3R4aF.node_modules--redbubble-design-system-react-Popover-styles__medium--PRJnY";
+function waitForAria() {
+    log("waitForAria enter", true);
+    var selector = ".node_modules--redbubble-design-system-react-Popover-styles__popover--3R4aF.node_modules--redbubble-design-system-react-Popover-styles__medium--PRJnY";
 
-    var dlArr = arryElements(dlImg);
-    for (var i = 0; i < dlArr.length; i++) {
-        log("i | " + i + "\ndlArr | " + $(dlArr)[i]);
-    }
+    log("waitForAria Enter", true);
+
+    //vars to check for aria-hidden value
+    var hideCheck;
+    var hideVal;
+    var args;
+
+    //child element vars for Download Images button
+    var child;
+    var ds = "#downshift-";
+    var i0 = "-item-0";
+    var nj; //j--
+
+    //for each selector, wait 1ms, then run function
+    $(selector).each($).wait(1, function (j) {
+        hideVal = $(selector)[j];
+        hideCheck = $(hideVal).attr("aria-hidden");
+        if (hideCheck == "false") { //Download Images button visible
+            nj = j - 1;
+            child = ds + nj + i0; //child element attributes
+            $(hideVal).find(child).click(); //clicks Download Images button
+        }
+    });
 }
 
-function func(num){
-	logger(num);
+function clickDwnlBtns() {
+	var modu = ".node_modules--redbubble-design-system-react-Modal-ModalCard-styles__card--zujT9";
+	
+    log("clickDwnlBtns enter", true);
+    var jqModu = $(modu);
+    var btns = jqModu.find("img").each(function() {
+        var source = $(this).attr("src");
+		log("source | " + source);
+    });
+
+    /*
+    var dwnlArr = arryElements(btns);
+
+    log("dwnlArr.length | " + dwnlArr.length);
+
+    for(var i =0;i<dwnlArr.length;i++){
+    var hold = $(dwnlArr).attr("src");
+    log("hold | " + hold + " " + i);
+    }
+     */
+}
+
+function downloadImages() {
+    log("downloadImages enter", true);
+    //var waiter = ".node_modules--redbubble-design-system-react-Box-styles__box--206r9.shared-components-pages-PromotePage-AvailableProducts-AvailableProducts__modalAssetCard--3WR4C";
+    var waiter = ".node_modules--redbubble-design-system-react-Box-styles__box--206r9.shared-components-pages-PromotePage-AvailableProducts-AvailableProducts__modalAssetCard--3WR4C";
+
+    var holder;
+
+	setTimeout(function () {
+            clickDwnlBtns();
+	}, 5000);
+		
+		
+	/*
+	waitForElement(waiter, function () {
+        clickDwnlBtns(modu);
+    });
+	*/
+}
+
+function closeDownload() {
+    log("closeDownload enter", true);
 }
 
 //saveBtn function
 function save() {
-    log("Enter Save");
+    log("save Enter", true);
 
     var btns = ".node_modules--redbubble-design-system-react-Button-styles__button--1wSNn.node_modules--redbubble-design-system-react-Button-styles__neutral--17MuV.node_modules--redbubble-design-system-react-Button-styles__circle--3zgIv.node_modules--redbubble-design-system-react-Button-styles__small--127Kw";
 
     var btnArr = arryElements(btns);
-	
-	var taskArr = [0,1,2];
-	
-	queueTask(taskArr);
-	
-    /*
-	for (var i in btnArr) {
+    var taskArr = [];
+    var data;
+
+    for (var i = 0; i < btnArr.length; i++) {
         if (i == 0) {
-            clickBtn(btnArr[i]);
-            taskArr.push(ariaHidden);
-            queueTask(taskArr);
+            data = $(btnArr)[i];
+            data.click();
+            waitForAria();
+            downloadImages();
         }
     }
-	*/
 
     /*
     TODO Functions for task list
@@ -114,8 +174,8 @@ function save() {
 }
 
 //Creates the save button
-function createSave(select) {
-    log("createSave Start");
+function createSaveBtn(select) {
+    log("createSaveBtn Enter", true);
     var saveButtonElement = '<div><input type="button" value="Save All" class="saveBtn"/></div>'; //saveBtn html
 
     //run createElements with saveButtonElement as element, and select as append location
@@ -125,18 +185,16 @@ function createSave(select) {
     $('.saveBtn').click(function () {
         save(); //save button function
     });
-    log("createSave end");
 }
 
 //will be run when script loads
 function run() {
-    log("run Start");
+    log("run Enter", true);
 
     var select = ".node_modules--redbubble-design-system-react-Box-styles__box--206r9.node_modules--redbubble-design-system-react-Text-styles__text--NLf2i.node_modules--redbubble-design-system-react-Text-styles__display1--2XY2m";
 
-    //check every ms for select to exist, when exists runs createSave
-    waitForElement(select, createSave, ms);
-    log("run End");
+    //check every ms for select to exist, when exists runs createSaveBtn
+    waitForElement(select, createSaveBtn);
 }
 
 //When script loads run();

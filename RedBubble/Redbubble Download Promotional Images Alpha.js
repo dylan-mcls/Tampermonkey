@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Redbubble Download Promotional Images
 // @namespace    http://tampermonkey.net/
-// @version      0.4.1
+// @version      0.4.2
 // @description  (*IN DEVELOPMENT*) Downloads all promo images from a RedBubble promotion page
 // @author       Dylan Nonya
 // @match        https://www.redbubble.com/studio/promote/*
@@ -15,7 +15,25 @@
 // @run-at document-end
 // ==/UserScript==
 
-var ms = 100; //number of milliseconds for timers
+const ms = 100; //number of milliseconds for timers
+
+//const class elements from RedBubble
+const ariaSelector = ".node_modules--redbubble-design-system-react-Popover-styles__popover--3R4aF.node_modules--redbubble-design-system-react-Popover-styles__medium--PRJnY";
+
+const modu = ".node_modules--redbubble-design-system-react-Modal-ModalCard-styles__card--zujT9";
+
+const waiter = ".node_modules--redbubble-design-system-react-Box-styles__box--206r9.shared-components-pages-PromotePage-AvailableProducts-AvailableProducts__modalAssetCard--3WR4C";
+
+const dwnlBtns = ".node_modules--redbubble-design-system-react-Button-styles__button--1wSNn.node_modules--redbubble-design-system-react-Button-styles__neutral--17MuV.node_modules--redbubble-design-system-react-Button-styles__circle--3zgIv.node_modules--redbubble-design-system-react-Button-styles__small--127Kw";
+
+var settingsBtns = ".node_modules--redbubble-design-system-react-Box-styles__box--206r9.node_modules--redbubble-design-system-react-Text-styles__text--NLf2i.node_modules--redbubble-design-system-react-Text-styles__display1--2XY2m";
+
+var closeBtn = ".node_modules--redbubble-design-system-react-Modal-ModalOverlay-styles__dismiss--Y3Ul2";
+
+const downshift = "#downshift-";
+const item0 = "-item-0";
+
+
 
 //Add custom css
 var cssTxt = GM_getResourceText("customCSS");
@@ -58,16 +76,8 @@ function arryElements(element) {
     return elemArr;
 }
 
-function clickBtn(btn) {
-    log("clickBtn Enter", true);
-    btn.click();
-}
-
 function waitForAria() {
     log("waitForAria enter", true);
-    var selector = ".node_modules--redbubble-design-system-react-Popover-styles__popover--3R4aF.node_modules--redbubble-design-system-react-Popover-styles__medium--PRJnY";
-
-    log("waitForAria Enter", true);
 
     //vars to check for aria-hidden value
     var hideCheck;
@@ -76,53 +86,49 @@ function waitForAria() {
 
     //child element vars for Download Images button
     var child;
-    var ds = "#downshift-";
-    var i0 = "-item-0";
     var nj; //j--
 
-    //for each selector, wait 1ms, then run function
-    $(selector).each($).wait(1, function (j) {
-        hideVal = $(selector)[j];
+    //for each ariaSelector, wait 1ms, then run function
+    $(ariaSelector).each($).wait(1, function (j) {
+        hideVal = $(ariaSelector)[j];
         hideCheck = $(hideVal).attr("aria-hidden");
         if (hideCheck == "false") { //Download Images button visible
             nj = j - 1;
-            child = ds + nj + i0; //child element attributes
+            child = downshift + nj + item0; //child element attributes
             $(hideVal).find(child).click(); //clicks Download Images button
         }
     });
 }
 
-function clickDwnlBtns() {
-	var modu = ".node_modules--redbubble-design-system-react-Modal-ModalCard-styles__card--zujT9";
+function closeDownload() {
+    log("closeDownload enter", true);
 	
+	$(closeBtn).click();
+}
+
+function clickDwnlBtns() {
     log("clickDwnlBtns enter", true);
-    var jqModu = $(modu);
+	
+	var btns;
+	
+	var jqModu = $(modu);
     var btns = jqModu.find("img").each(function() {
         var source = $(this).attr("src");
 		log("source | " + source);
     });
-
-    /*
-    var dwnlArr = arryElements(btns);
-
-    log("dwnlArr.length | " + dwnlArr.length);
-
-    for(var i =0;i<dwnlArr.length;i++){
-    var hold = $(dwnlArr).attr("src");
-    log("hold | " + hold + " " + i);
-    }
-     */
+	
+	setTimeout(function () {
+        closeDownload();
+	}, 1500);
 }
 
 function downloadImages() {
-    log("downloadImages enter", true);
-    //var waiter = ".node_modules--redbubble-design-system-react-Box-styles__box--206r9.shared-components-pages-PromotePage-AvailableProducts-AvailableProducts__modalAssetCard--3WR4C";
-    var waiter = ".node_modules--redbubble-design-system-react-Box-styles__box--206r9.shared-components-pages-PromotePage-AvailableProducts-AvailableProducts__modalAssetCard--3WR4C";
+    log("downloadImages enter", true);    
 
     var holder;
 
 	setTimeout(function () {
-            clickDwnlBtns();
+        clickDwnlBtns();
 	}, 5000);
 		
 		
@@ -133,44 +139,22 @@ function downloadImages() {
 	*/
 }
 
-function closeDownload() {
-    log("closeDownload enter", true);
-}
-
 //saveBtn function
 function save() {
     log("save Enter", true);
 
-    var btns = ".node_modules--redbubble-design-system-react-Button-styles__button--1wSNn.node_modules--redbubble-design-system-react-Button-styles__neutral--17MuV.node_modules--redbubble-design-system-react-Button-styles__circle--3zgIv.node_modules--redbubble-design-system-react-Button-styles__small--127Kw";
-
-    var btnArr = arryElements(btns);
+    var btnArr = arryElements(dwnlBtns);
     var taskArr = [];
     var data;
 
     for (var i = 0; i < btnArr.length; i++) {
-        if (i == 0) {
+        if (i <= 1) {
             data = $(btnArr)[i];
             data.click();
             waitForAria();
             downloadImages();
         }
     }
-
-    /*
-    TODO Functions for task list
-    Find all select buttons //Task 0
-    Return current button //Task 0{ LOOP START
-    Click Current Button //Task 1
-    WAIT for button click //Task 2
-    Find aria-hidden false Download Images Button //Task 2
-    Click Download Images Button //Task 2
-    WAIT for button click //Task 3
-    Find all download buttons for selected options //Task 3
-    Add EACH option to the queue //Task 4, 5, 6, 7, and 8 (in thie pseudocode example)
-    Close current Download page. //Task 9
-    } LOOP again starting at task 10 until task 0 is complete
-     */
-
 }
 
 //Creates the save button
@@ -191,10 +175,8 @@ function createSaveBtn(select) {
 function run() {
     log("run Enter", true);
 
-    var select = ".node_modules--redbubble-design-system-react-Box-styles__box--206r9.node_modules--redbubble-design-system-react-Text-styles__text--NLf2i.node_modules--redbubble-design-system-react-Text-styles__display1--2XY2m";
-
     //check every ms for select to exist, when exists runs createSaveBtn
-    waitForElement(select, createSaveBtn);
+    waitForElement(settingsBtns, createSaveBtn);
 }
 
 //When script loads run();

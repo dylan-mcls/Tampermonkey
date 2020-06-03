@@ -30,3 +30,20 @@ function arryElements(element) {
 
     return elemArr;
 }
+
+//Will sleep until ms number of milliseconds have passed
+
+/*
+ms = milliseconds to sleep
+
+//synchronous
+sleep(ms).then(function() { //do stuff });
+
+//asynchronous
+await sleep(ms);
+
+ */
+
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}

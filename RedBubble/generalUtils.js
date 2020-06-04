@@ -31,9 +31,14 @@ function arryElements(element) {
     return elemArr;
 }
 
-//Will sleep until ms number of milliseconds have passed
-
+// Returns a promise which resolves after x amount of ms. Allows pausing on a line.
+function sleep(ms) {
+    // A promise is returned. When used in an async function with the await keyword, will wait the x amount of milliseconds to resolve and then continue
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
 /*
+sleep usage
+
 ms = milliseconds to sleep
 
 //synchronous
@@ -41,9 +46,4 @@ sleep(ms).then(function() { //do stuff });
 
 //asynchronous
 await sleep(ms);
-
- */
-
-function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
-}
+*/

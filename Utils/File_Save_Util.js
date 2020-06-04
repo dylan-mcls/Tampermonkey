@@ -1,4 +1,11 @@
 //FileSaver.js obtained from https://raw.githubusercontent.com/eligrey/FileSaver.js/master/dist/FileSaver.js
+
+
+function saveLocalFile(data, fileName){
+	var blob = new Blob([data], {type: "text/plain;charset=utf-8"});
+	saveAs(blob, fileName);
+}
+
 (function (global, factory) {
   if (typeof define === "function" && define.amd) {
     define([], factory);

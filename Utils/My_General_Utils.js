@@ -1,15 +1,4 @@
-
 //My_General_Utils.js
-
-//Saves data to a file
-/*
-To call saveLocalFile the calling user script must have this require
-//@require 	 https://raw.githubusercontent.com/eligrey/FileSaver.js/master/dist/FileSaver.js
-*/
-function saveLocalFile(data, fileName){
-	var blob = new Blob([data], {type: "text/plain;charset=utf-8"});
-	saveAs(blob, fileName);
-}
 
 //Takes strings of html elements and appendeds it to the selector
 function createElements(elements, selector) {

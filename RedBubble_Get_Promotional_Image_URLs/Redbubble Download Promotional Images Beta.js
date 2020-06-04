@@ -1,22 +1,22 @@
 // ==UserScript==
-// @name         Redbubble Download Promotional Images BETA
+// @name         Redbubble Get Promotional Image URLs
 // @namespace    http://tampermonkey.net/
-// @version      BETA 1.0.1
-// @description  (*IN DEVELOPMENT*) Downloads all promo images from a RedBubble promotion page
-// @author       Dylan Nonya
+// @version      1.0.0
+// @description  Gets urls for all promo images from a RedBubble promotion page and saves a txt file contianing urls
+// @author       Dylan Banta
 // @match        https://www.redbubble.com/studio/promote/*
 // @require      https://greasyfork.org/scripts/404462-my-logger-util/code/My_Logger_Util.js?version=811196
-// @require 	 https://greasyfork.org/scripts/404600-my-general-utils/code/My_General_Utils.js?version=812027
+// @require 	 https://greasyfork.org/scripts/404600-my-general-utils/code/My_General_Utils.js?version=812555
 // @require      https://code.jquery.com/jquery-3.5.1.min.js
+// @require 	 https://raw.githubusercontent.com/eligrey/FileSaver.js/master/dist/FileSaver.js
 // @resource 	 customCSS https://raw.githubusercontent.com/DylanBanta/Tampermonkey/master/RedBubble/savebtn.css
 // @grant        GM_getResourceText
 // @grant        GM_addStyle
 // @run-at document-end
 // ==/UserScript==
 
-var ms = 100;
+//Global vars
 var btnCount = 0;
-
 var outputArr = [];
 
 //Calls custom log util
@@ -62,7 +62,7 @@ async function save() {
     var imgArr = [];
 
     for (const $button of $buttons) {
-        if (btnCount != 0 && btnCount <= 3) {
+        if (btnCount != 0) {
             // Click the button
             log($button);
             $button.click();
@@ -92,26 +92,20 @@ async function save() {
                 fileData = output[j];
             } else {
                 fileData = fileData + "\n" + output[j];
+
             }
         }
     }
+	var urlData = window.location.href.split("/");
+	var productID = urlData[urlData.length-1];
+    saveLocalFile(fileData, productID + "_urls.txt");
 
-    log(fileData);
-
-}
-
-function getCurrentProductID(){
-	log("getCurrentProductID Enter");
-	var url = window.location.href;
-	url = url.split('/');
-    url = url.pop();
-	return url;
 }
 
 function saveToFile(data) {
-	log("saveToFile Enter");
+    log("saveToFile Enter");
     var userInput = document.getElementById("myText").value;
-	var txt = getCurrentProductID + "_product_urls.txt";
+    var txt = getCurrentProductID + "_product_urls.txt";
     var blob = new Blob([data], {
         type: "text/plain;charset=utf-8"
     });
@@ -125,8 +119,8 @@ It is defined with the async keyword which lets us use await inside the function
 async function modal() {
 
     var modalArr = [];
-    // Wait for 1 second for that dumb loading icon to go away
-    await sleep(1000);
+    // Wait for 1.5 seconds for that dumb loading icon to go away
+    await sleep(2000);
     // Select the modal element from the DOM
     const $modal = document.querySelector(".node_modules--redbubble-design-system-react-Modal-ModalCard-styles__card--zujT9");
     // Select all the img elements from the modal element

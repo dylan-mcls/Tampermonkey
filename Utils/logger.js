@@ -1,11 +1,3 @@
-// ==UserScript==
-// @name         My_Logger_Util
-// @namespace    http://tampermonkey.net/
-// @description  Custom debug log for my user scripts
-// @author       Dylan Banta
-// @grant        none
-// ==/UserScript==
-
 /*
 add log function to userscript
 forceOn overload will not throw err if null

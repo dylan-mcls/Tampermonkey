@@ -1,15 +1,11 @@
-// ==UserScript==
-// @name         My_General_Utils
-// @description  Utilities I use in other user scripts.
-// @require 	 https://raw.githubusercontent.com/eligrey/FileSaver.js/master/dist/FileSaver.js
-// @author       Dylan Banta
-// @grant        none
-// ==/UserScript==
 
-//general utils.js
-var ms = 100;
+//My_General_Utils.js
 
 //Saves data to a file
+/*
+To call saveLocalFile the calling user script must have this require
+//@require 	 https://raw.githubusercontent.com/eligrey/FileSaver.js/master/dist/FileSaver.js
+*/
 function saveLocalFile(data, fileName){
 	var blob = new Blob([data], {type: "text/plain;charset=utf-8"});
 	saveAs(blob, fileName);
@@ -24,7 +20,10 @@ function createElements(elements, selector) {
 
 //waits for a jQuery element to exist then runs callback function
 //syntax waitForElement(jQuery selector, function onec element exists, timout in milliseconds)
-function waitForElement(selector, callback) {
+function waitForElement(selector, callback, ms) {
+	if(ms == null){
+		var ms = 100;
+	}
     log("waitForElement Enter", true);
     if ($(selector).length) {
         callback(selector);

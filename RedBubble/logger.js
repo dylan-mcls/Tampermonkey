@@ -1,3 +1,9 @@
+// ==UserScript==
+// @name         My_Logger_Util
+// @description  Custom debug log for my user scripts
+// @author       Dylan Banta
+// @grant        none
+// ==/UserScript==
 
 /*
 add log function to userscript

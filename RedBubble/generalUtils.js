@@ -1,4 +1,19 @@
+// ==UserScript==
+// @name         My_General_Utils
+// @description  Utilities I use in other user scripts.
+// @require 	 https://raw.githubusercontent.com/eligrey/FileSaver.js/master/dist/FileSaver.js
+// @author       Dylan Banta
+// @grant        none
+// ==/UserScript==
+
 //general utils.js
+var ms = 100;
+
+//Saves data to a file
+function saveLocalFile(data, fileName){
+	var blob = new Blob([data], {type: "text/plain;charset=utf-8"});
+	saveAs(blob, fileName);
+}
 
 //Takes strings of html elements and appendeds it to the selector
 function createElements(elements, selector) {
@@ -36,14 +51,3 @@ function sleep(ms) {
     // A promise is returned. When used in an async function with the await keyword, will wait the x amount of milliseconds to resolve and then continue
     return new Promise(resolve => setTimeout(resolve, ms));
 }
-/*
-sleep usage
-
-ms = milliseconds to sleep
-
-//synchronous
-sleep(ms).then(function() { //do stuff });
-
-//asynchronous
-await sleep(ms);
-*/

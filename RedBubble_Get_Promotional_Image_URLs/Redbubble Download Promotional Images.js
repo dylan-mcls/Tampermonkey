@@ -6,7 +6,8 @@
 // @author       Dylan Banta
 // @match        https://www.redbubble.com/studio/promote/*
 // @require 	 https://greasyfork.org/scripts/404462-my-logger-util/code/My_Logger_Util.js?version=812560
-// @require 	 https://greasyfork.org/scripts/404600-my-general-utils/code/My_General_Utils.js?version=812558
+// @require 	 https://greasyfork.org/scripts/404600-my-general-utils/code/My_General_Utils.js?version=812567
+// @require 	 https://greasyfork.org/scripts/404687-file-saver-util/code/File_Saver_Util.js?version=812568
 // @require      https://code.jquery.com/jquery-3.5.1.min.js
 // @require 	 https://greasyfork.org/scripts/404687-file-saver-util/code/File_Saver_Util.js?version=812564
 // @resource 	 customCSS https://raw.githubusercontent.com/DylanBanta/Tampermonkey/master/RedBubble_Get_Promotional_Image_URLs/savebtn.css
@@ -22,7 +23,7 @@ var outputArr = [];
 //Calls custom log util
 function log(logs, forceOn) {
     var call = log.caller.name; //get caller function
-    var debug = true;
+    var debug = false;
     logger(logs, debug, call, forceOn);
 }
 

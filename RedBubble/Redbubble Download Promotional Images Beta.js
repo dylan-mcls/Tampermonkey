@@ -6,10 +6,8 @@
 // @author       Dylan Nonya
 // @match        https://www.redbubble.com/studio/promote/*
 // @require      https://greasyfork.org/scripts/404462-my-logger-util/code/My_Logger_Util.js?version=811196
-// @require 	 https://greasyfork.org/scripts/404464-task-array-util/code/Task_Array_Util.js?version=811281
 // @require 	 https://greasyfork.org/scripts/404600-my-general-utils/code/My_General_Utils.js?version=812027
 // @require      https://code.jquery.com/jquery-3.5.1.min.js
-// @require 	 https://greasyfork.org/scripts/404470-timing-jquery/code/Timing_JQuery.js?version=811203
 // @resource 	 customCSS https://raw.githubusercontent.com/DylanBanta/Tampermonkey/master/RedBubble/savebtn.css
 // @grant        GM_getResourceText
 // @grant        GM_addStyle

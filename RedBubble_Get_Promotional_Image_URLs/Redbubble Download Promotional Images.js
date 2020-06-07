@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Redbubble Get Promotional Image URLs
 // @namespace    http://tampermonkey.net/
-// @version      1.0.0
+// @version      1.0.1
 // @description  Gets urls for all promo images from a RedBubble promotion page and saves a txt file contianing urls
 // @author       Dylan Banta
 // @match        https://www.redbubble.com/studio/promote/*
@@ -18,6 +18,7 @@
 
 //Global vars
 var btnCount = 0;
+var title;
 var outputArr = [];
 
 //Calls custom log util
@@ -36,7 +37,6 @@ function run() {
     log("run Enter", true);
 
     var settingsBtns = ".node_modules--redbubble-design-system-react-Box-styles__box--206r9.node_modules--redbubble-design-system-react-Text-styles__text--NLf2i.node_modules--redbubble-design-system-react-Text-styles__display1--2XY2m";
-
     waitForElement(settingsBtns, createSaveBtn);
 }
 
@@ -44,10 +44,10 @@ function run() {
 function createSaveBtn(select) {
     log("createSaveBtn Enter", true);
     var saveButtonElement = '<div><input type="button" value="Save All" class="saveBtn"/></div>'; //saveBtn html
-
+    title = $(".node_modules--redbubble-design-system-react-Box-styles__box--206r9.node_modules--redbubble-design-system-react-Text-styles__text--NLf2i.node_modules--redbubble-design-system-react-Text-styles__display1--2XY2m").text().replace(/ /g,"_") + "_";
+    log("title | " + title);
     //run createElements with saveButtonElement as element, and select as append location
     createElements(saveButtonElement, select);
-
     //Add save() function to btn click
     $('.saveBtn').click(function () {
         save(); //save button function
@@ -63,7 +63,7 @@ async function save() {
     var imgArr = [];
 
     for (const $button of $buttons) {
-        if (btnCount != 0) {
+        if (btnCount != 0 && btnCount <= 1) {
             // Click the button
             log($button);
             $button.click();
@@ -99,7 +99,7 @@ async function save() {
     }
 	var urlData = window.location.href.split("/");
 	var productID = urlData[urlData.length-1];
-    saveLocalFile(fileData, productID + "_urls.txt");
+    saveLocalFile(fileData, title +  productID + "_urls.txt");
 
 }
 

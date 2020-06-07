@@ -63,7 +63,7 @@ async function save() {
     var imgArr = [];
 
     for (const $button of $buttons) {
-        if (btnCount != 0 && btnCount <= 1) {
+        if (btnCount != 0) {
             // Click the button
             log($button);
             $button.click();

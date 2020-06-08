@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Redbubble Get Promotional Image URLs
 // @namespace    http://tampermonkey.net/
-// @version      1.0.1
+// @version      1.0.2
 // @description  Gets urls for all promo images from a RedBubble promotion page and saves a txt file contianing urls
 // @author       Dylan Banta
 // @match        https://www.redbubble.com/studio/promote/*
@@ -20,6 +20,7 @@
 var btnCount = 0;
 var title;
 var outputArr = [];
+var productArr = [];
 
 //Calls custom log util
 function log(logs, forceOn) {
@@ -86,15 +87,17 @@ async function save() {
     var fileData;
 
     for (var i = 0; i < outputArr.length; i++) {
-        var output = outputArr[i];
+		var output = outputArr[i];
+		
+		if(i == 0){
+			fileData = productArr[i];
+		} else {
+			fileData = fileData + "\n" + productArr[i];
+		}
+		
         for (var j = 0; j < output.length; j++) {
-            log("outputArr[" + i + "][" + j + "] | " + output[j]);
-            if (i == 0 && j == 0) {
-                fileData = output[j];
-            } else {
-                fileData = fileData + "\n" + output[j];
-
-            }
+            log("outputArr[" + i + "][" + j + "] | " + output[j], true);
+            fileData = fileData + "\n" + output[j];
         }
     }
 	var urlData = window.location.href.split("/");
@@ -125,6 +128,10 @@ async function modal() {
     // Select the modal element from the DOM
     const $modal = document.querySelector(".node_modules--redbubble-design-system-react-Modal-ModalCard-styles__card--zujT9");
     // Select all the img elements from the modal element
+	
+	const product = $(".node_modules--redbubble-design-system-react-Box-styles__box--206r9.node_modules--redbubble-design-system-react-Text-styles__text--NLf2i.node_modules--redbubble-design-system-react-Text-styles__display2--3ZwPH.node_modules--redbubble-design-system-react-Box-styles__display-block--2XANJ").text();
+	
+	
     const $images = $modal.querySelectorAll("img");
     // Get the last image found and scroll it into view to lazy load all the images in the modal
     $images[$images.length - 1].scrollIntoView({
@@ -137,6 +144,7 @@ async function modal() {
         var sourceImg = img.getAttribute("src");
         modalArr.push(sourceImg);
     })
+	productArr.push(product);
     outputArr.push(modalArr);
     // Select the close button from the DOM
     const $close = document.querySelector("button[aria-label='Dismiss modal']")

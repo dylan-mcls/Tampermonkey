@@ -2,7 +2,6 @@ Graphic T-Shirt
 https://ih1.redbubble.net/image.{1}.{0}/gptr,1400x,front,black-c,188,133,1000,1000-bg,f8f8f8.jpg
 https://ih1.redbubble.net/image.{1}.{0}/gptr,1400x,front,black-c,313,133,750,1000-bg,f8f8f8.jpg
 https://ih1.redbubble.net/image.{1}.{0}/ssrco,mens_graphic_t_shirt,womens,black,front,tall_three_quarter,750x1000-bg,f8f8f8.jpg
-https://ih1.redbubble.net/preview/ssrco,mens_graphic_t_shirt,womens,black,back,tall_portrait,750x1000-bg,f8f8f8.jpg
 https://ih1.redbubble.net/image.{1}.{0}/gpt,mens,750x1000,black,small-pad,750x1000,f8f8f8.jpg
 Chiffon Top
 https://ih1.redbubble.net/image.{2}.{0}/ssrco,chiffon_top,womens,black,front,square_three_quarter,x1000-bg,f8f8f8.1.jpg
@@ -10,15 +9,71 @@ https://ih1.redbubble.net/image.{2}.{0}/ssrco,chiffon_top,womens,black,front,tal
 https://ih1.redbubble.net/image.{2}.{0}/ctf,750x1000,black-pad,750x1000,f8f8f8.jpg
 https://ih1.redbubble.net/image.{2}.{0}/ssrco,chiffon_top,womens,black,front,tall_portrait,x1000-bg,f8f8f8.1.jpg
 https://ih1.redbubble.net/image.{2}.{0}/ssrco,chiffon_top,womens,black,lifestyle,tall_portrait,x1000-bg,f8f8f8.1.jpg
-https://ih1.redbubble.net/preview/ssrco,chiffon_top,womens,black,back,tall_three_quarter,x1000-bg,f8f8f8.1.jpg
 Relaxed Fit T-Shirt
 https://ih1.redbubble.net/image.{3}.{0}/ra,relaxed_fit,x2000,101010:01c5ca27c6,front-c,170,163,1000,1000-bg,f8f8f8.jpg
 https://ih1.redbubble.net/image.{3}.{0}/ra,relaxed_fit,x2000,101010:01c5ca27c6,front-c,295,163,750,1000-bg,f8f8f8.jpg
-https://ih1.redbubble.net/preview/ra,relaxed_fit,x2000,101010:01c5ca27c6,back-c,340,163,750,1000-bg,f8f8f8.jpg
 Fitted V-Neck T-Shirt
 https://ih1.redbubble.net/image.{3}.{0}/ra,fitted_v_neck,x1950,101010:01c5ca27c6,front-c,150,133,1000,1000-bg,f8f8f8.jpg
 https://ih1.redbubble.net/image.{3}.{0}/ra,fitted_v_neck,x1950,101010:01c5ca27c6,front-c,275,133,750,1000-bg,f8f8f8.jpg
-https://ih1.redbubble.net/preview/ra,fitted_v_neck,x1950,101010:01c5ca27c6,back-c,275,133,750,1000-bg,f8f8f8.jpg
+Classic T-Shirt
+https://ih1.redbubble.net/image.{3}.{0}/ra,classic_tee,x2000,101010:01c5ca27c6,front-c,200,112,1000,1000-bg,f8f8f8.jpg
+https://ih1.redbubble.net/image.{3}.{0}/ra,classic_tee,x2000,101010:01c5ca27c6,front-c,325,112,750,1000-bg,f8f8f8.jpg
+https://ih1.redbubble.net/image.{3}.{0}/ssrco,classic_tee,womens,101010:01c5ca27c6,front,tall_three_quarter,x1000-bg,f8f8f8.1.jpg
+https://ih1.redbubble.net/image.{3}.{0}/ssrco,classic_tee,womens,101010:01c5ca27c6,front,tall_portrait,x1000-bg,f8f8f8.1.jpg
+https://ih1.redbubble.net/image.{3}.{0}/ra,classic_tee,x1000,101010:01c5ca27c6,front-c,21,44,637,850-bg,f8f8f8.jpg
+Tri-blend T-Shirt
+https://ih1.redbubble.net/image.{3}.{0}/ra,triblend_tee,x2150,black_triblend,front-c,242,133,1000,1000-bg,f8f8f8.jpg
+https://ih1.redbubble.net/image.{3}.{0}/ra,triblend_tee,x2150,black_triblend,front-c,367,133,750,1000-bg,f8f8f8.jpg
+https://ih1.redbubble.net/image.{3}.{0}/ssrco,triblend_tee,womens,black_triblend,front,tall_three_quarter,x1000-bg,f8f8f8.1.jpg
+https://ih1.redbubble.net/image.{3}.{0}/ssrco,triblend_tee,womens,black_triblend,side,tall_portrait,x1000-bg,f8f8f8.1.jpg
+Lightweight Hoodie
+https://ih1.redbubble.net/image.{3}.{0}/ssrco,lightweight_hoodie,mens,101010:01c5ca27c6,front,square_three_quarter,x1000-bg,f8f8f8.2.jpg
+https://ih1.redbubble.net/image.{3}.{0}/ssrco,lightweight_hoodie,mens,101010:01c5ca27c6,front,tall_three_quarter,x1000-bg,f8f8f8.2.jpg
+https://ih1.redbubble.net/image.{3}.{0}/ssrco,lightweight_hoodie,womens,101010:01c5ca27c6,front,tall_three_quarter,x1000-bg,f8f8f8.1.jpg
+Lightweight Sweatshirt
+https://ih1.redbubble.net/image.{3}.{0}/ssrco,lightweight_sweatshirt,mens,black_lightweight_raglan_sweatshirt,front,square_three_quarter,x1000-bg,f8f8f8.1.jpg
+https://ih1.redbubble.net/image.{3}.{0}/ssrco,lightweight_sweatshirt,mens,black_lightweight_raglan_sweatshirt,front,tall_three_quarter,x1000-bg,f8f8f8.1.jpg
+https://ih1.redbubble.net/image.{3}.{0}/ssrco,lightweight_sweatshirt,womens,black_lightweight_raglan_sweatshirt,front,tall_three_quarter,x1000-bg,f8f8f8.1.jpg
+Slim Fit T-Shirt
+https://ih1.redbubble.net/image.{3}.{0}/ra,unisex_tshirt,x2200,101010:01c5ca27c6,front-c,267,146,1000,1000-bg,f8f8f8.jpg
+https://ih1.redbubble.net/image.{3}.{0}/ra,unisex_tshirt,x2200,101010:01c5ca27c6,front-c,392,146,750,1000-bg,f8f8f8.jpg
+https://ih1.redbubble.net/image.{3}.{0}/ssrco,unisex_tshirt,womens,101010:01c5ca27c6,front,tall_three_quarter,x1000-bg,f8f8f8.jpg
+https://ih1.redbubble.net/image.{3}.{0}/ssrco,unisex_tshirt,womens,101010:01c5ca27c6,front,tall_portrait,x1000-bg,f8f8f8.jpg
+https://ih1.redbubble.net/image.{3}.{0}/ra,unisex_tshirt,x1000,101010:01c5ca27c6,front-c,10,44,666,888-bg,f8f8f8.jpg
+Baseball ¾ Sleeve T-Shirt
+https://ih1.redbubble.net/image.{3}.{0}/ra,raglan,x1950,black_white,front-c,160,90,1000,1000-bg,f8f8f8.jpg
+https://ih1.redbubble.net/image.{3}.{0}/ra,raglan,x1950,black_white,front-c,290,90,750,1000-bg,f8f8f8.jpg
+Long Sleeve T-Shirt
+https://ih1.redbubble.net/image.{3}.{0}/ra,longsleeve,x2000,101010:01c5ca27c6,front-c,190,60,1000,1000-bg,f8f8f8.jpg
+https://ih1.redbubble.net/image.{3}.{0}/ra,longsleeve,x2000,101010:01c5ca27c6,front-c,315,60,750,1000-bg,f8f8f8.jpg
+https://ih1.redbubble.net/image.{3}.{0}/ssrco,longsleeve,womens,101010:01c5ca27c6,front,tall_three_quarter,750x1000-bg,f8f8f8.jpg
+Pullover Hoodie
+https://ih1.redbubble.net/image.{3}.{0}/ssrco,mhoodie,mens,101010:01c5ca27c6,front,square_three_quarter,x1000-bg,f8f8f8.1.jpg
+https://ih1.redbubble.net/image.{3}.{0}/ssrco,mhoodie,mens,101010:01c5ca27c6,front,tall_three_quarter,x1000-bg,f8f8f8.1.jpg
+https://ih1.redbubble.net/image.{3}.{0}/ssrco,mhoodie,womens,101010:01c5ca27c6,front,tall_three_quarter,x1000-bg,f8f8f8.1.jpg
+V-Neck T-Shirt
+https://ih1.redbubble.net/image.{3}.{0}/ra,vneck,x1900,101010:01c5ca27c6,front-c,160,70,1000,1000-bg,f8f8f8.jpg
+https://ih1.redbubble.net/image.{3}.{0}/ra,vneck,x1900,101010:01c5ca27c6,front-c,290,70,750,1000-bg,f8f8f8.jpg
+Pullover Sweatshirt
+https://ih1.redbubble.net/image.{3}.{0}/ra,sweatshirt,x1850,101010:01c5ca27c6,front-c,105,45,1000,1000-bg,f8f8f8.jpg
+https://ih1.redbubble.net/image.{3}.{0}/ra,sweatshirt,x1850,101010:01c5ca27c6,front-c,230,45,750,1000-bg,f8f8f8.jpg
+https://ih1.redbubble.net/image.{3}.{0}/ssrco,pullover,womens,101010:01c5ca27c6,front,tall_three_quarter,750x1000-bg,f8f8f8.jpg
+Tank Top
+https://ih1.redbubble.net/image.{3}.{0}/ra,tank,x1850,101010:01c5ca27c6,front-c,95,35,1000,1000-bg,f8f8f8.jpg
+https://ih1.redbubble.net/image.{3}.{0}/ra,tank,x1850,101010:01c5ca27c6,front-c,220,35,750,1000-bg,f8f8f8.jpg
+Fitted Scoop T-Shirt
+https://ih1.redbubble.net/image.{3}.{0}/ra,fitted_scoop,x2000,101010:01c5ca27c6,front-c,160,143,1000,1000-bg,f8f8f8.jpg
+https://ih1.redbubble.net/image.{3}.{0}/ra,fitted_scoop,x2000,101010:01c5ca27c6,front-c,285,143,750,1000-bg,f8f8f8.jpg
+Fitted T-Shirt
+https://ih1.redbubble.net/image.{3}.{0}/ra,womens_tshirt,x1900,101010:01c5ca27c6,front-c,140,125,1000,1000-bg,f8f8f8.jpg
+https://ih1.redbubble.net/image.{3}.{0}/ra,womens_tshirt,x1900,101010:01c5ca27c6,front-c,265,125,750,1000-bg,f8f8f8.jpg
+Racerback Tank Top
+https://ih1.redbubble.net/image.{3}.{0}/ssrco,racerback,womens,101010:01c5ca27c6,front,square_three_quarter,x1000-bg,f8f8f8.1.jpg
+https://ih1.redbubble.net/image.{3}.{0}/ssrco,racerback,womens,101010:01c5ca27c6,front,tall_three_quarter,x1000-bg,f8f8f8.1.jpg
+Zipped Hoodie
+https://ih1.redbubble.net/image.{3}.{0}/ssrco,mhoodiez,mens,101010:01c5ca27c6,front,square_three_quarter,1000x1000-bg,f8f8f8.jpg
+https://ih1.redbubble.net/image.{3}.{0}/ssrco,mhoodiez,mens,101010:01c5ca27c6,front,tall_three_quarter,750x1000-bg,f8f8f8.jpg
+https://ih1.redbubble.net/image.{3}.{0}/ssrco,mhoodiez,womens,101010:01c5ca27c6,front,tall_three_quarter,750x1000-bg,f8f8f8.jpg
 Acrylic Block
 https://ih1.redbubble.net/image.{4}.{0}/abf,4x4,x1000-bg,f8f8f8.jpg
 https://ih1.redbubble.net/image.{4}.{0}/abp,4x4,x750-pad,750x1000,f8f8f8.jpg
@@ -26,25 +81,64 @@ https://ih1.redbubble.net/image.{4}.{0}/abp,4x4,x1000-bg,f8f8f8.jpg
 https://ih1.redbubble.net/image.{4}.{0}/abf,4x4,x750-pad,750x1000,f8f8f8.jpg
 https://ih1.redbubble.net/image.{4}.{0}/ab3q,4x4,x750-pad,750x1000,f8f8f8.jpg
 https://ih1.redbubble.net/image.{4}.{0}/absc,4x4,x750-pad,750x1000,f8f8f8.jpg
+Coasters (Set of 4)
+https://ih1.redbubble.net/image.{4}.{0}/ur,coaster_pack_4_flatlay,square,1000x1000.2.jpg
+https://ih1.redbubble.net/image.{4}.{0}/ur,coaster_pack_4_flatlay,wide_portrait,750x1000.1.jpg
+https://ih1.redbubble.net/image.{4}.{0}/ur,coaster_pack_4_lifestyle,wide_portrait,750x1000.1.jpg
+https://ih1.redbubble.net/image.{4}.{0}/ur,coaster_pack_4_stack,wide_portrait,750x1000.1.jpg
 Art Print
 https://ih1.redbubble.net/image.{5}.{0}/aps,840x830,small,transparent-pad,1000x1000,f8f8f8.jpg
 https://ih1.redbubble.net/image.{5}.{0}/carp,small,product,750x1000.jpg
 https://ih1.redbubble.net/image.{5}.{0}/carp,small,square_product,1000x1000.jpg
 https://ih1.redbubble.net/image.{5}.{0}/farp,small,wall_texture,product,750x1000.jpg
+Canvas Print
+https://ih1.redbubble.net/image.{5}.{0}/mp,840x830,matte,f8f8f8,t-pad,1000x1000,f8f8f8.jpg
+https://ih1.redbubble.net/image.{5}.{0}/ccp,small,product,750x1000.jpg
+https://ih1.redbubble.net/image.{5}.{0}/ccp,small,square_product,1000x1000.jpg
+https://ih1.redbubble.net/image.{5}.{0}/fcp,small,wall_texture,product,750x1000.jpg
+Framed Art Print
+https://ih1.redbubble.net/image.{5}.{0}/fp,840x830,black,off_white,box20,s,f8f8f8-pad,1000x1000,f8f8f8.jpg
+https://ih1.redbubble.net/image.{5}.{0}/cfp,small,black,off_white,box20,product,750x1000.jpg
+https://ih1.redbubble.net/image.{5}.{0}/cfp,small,black,off_white,box20,square_product,1000x1000.jpg
+https://ih1.redbubble.net/image.{5}.{0}/ffp,small,black,off_white,box20,wall_texture,product,750x1000.jpg
+Greeting Card
+https://ih1.redbubble.net/image.{5}.{0}/papergc,500x,w,f8f8f8-pad,1000x1000,f8f8f8.jpg
+https://ih1.redbubble.net/image.{5}.{0}/papergc,500x,w,f8f8f8-pad,750x1000,f8f8f8.jpg
+Metal Print
+https://ih1.redbubble.net/image.{5}.{0}/mp,840x860,gloss,f8f8f8,t-pad,1000x1000,f8f8f8.jpg
+https://ih1.redbubble.net/image.{5}.{0}/cmp,x_small,gloss,product,750x1000.jpg
+https://ih1.redbubble.net/image.{5}.{0}/cmp,x_small,gloss,square_product,1000x1000.jpg
+https://ih1.redbubble.net/image.{5}.{0}/fmp,x_small,gloss,wall_texture,product,750x1000.jpg
+Photographic Print
+https://ih1.redbubble.net/image.{5}.{0}/pp,840x830-pad,1000x1000,f8f8f8.jpg
+https://ih1.redbubble.net/image.{5}.{0}/cpp,small,lustre,product,750x1000.jpg
+https://ih1.redbubble.net/image.{5}.{0}/cpp,small,lustre,square_product,1000x1000.jpg
+https://ih1.redbubble.net/image.{5}.{0}/fpp,small,lustre,wall_texture,product,750x1000.jpg
+Postcard
+https://ih1.redbubble.net/image.{5}.{0}/paperpc,750x,w,f8f8f8-pad,1000x1000,f8f8f8.jpg
+https://ih1.redbubble.net/image.{5}.{0}/paperpc,500x,w,f8f8f8-pad,750x1000,f8f8f8.jpg
+Poster
+https://ih1.redbubble.net/image.{5}.{0}/poster,840x830,f8f8f8-pad,1000x1000,f8f8f8.jpg
+https://ih1.redbubble.net/image.{5}.{0}/cposter,small,product,750x1000.2.jpg
+https://ih1.redbubble.net/image.{5}.{0}/cposter,small,square_product,1000x1000.2.jpg
+https://ih1.redbubble.net/image.{5}.{0}/fposter,small,wall_texture,product,750x1000.jpg
 Throw Blanket
 https://ih1.redbubble.net/image.{6}.{0}/ur,blanket_medium_bed,square,x1000.1.jpg
 https://ih1.redbubble.net/image.{6}.{0}/ur,blanket_medium_bed,wide_portrait,x1000.1.jpg
 https://ih1.redbubble.net/image.{6}.{0}/ur,blanket_medium_couch,wide_portrait,x1000.1.jpg
 https://ih1.redbubble.net/image.{6}.{0}/ur,blanket_medium_fold,wide_portrait,x1000.1.jpg
-https://www.redbubble.com/preview-reference-assets/products/blanket_underside.eace219bfdf5a0ea1e76bd3003daf7b199de1eecbeb0de1cd168b3cdd9f28f5e.jpg
 https://ih1.redbubble.net/image.{6}.{0}/ur,blanket_compare,tall_portrait,x1000.1.jpg
+Tapestry
+https://ih1.redbubble.net/image.{6}.{0}/tapestry,1200x-pad,1000x1000,f8f8f8.jpg
+https://ih1.redbubble.net/image.{6}.{0}/ur,tapestry_lifestyle_small,wide_portrait,750x1000.jpg
+https://ih1.redbubble.net/image.{6}.{0}/ur,tapestry_lifestyle_small,square,1000x1000.jpg
+https://ih1.redbubble.net/image.{6}.{0}/tapestry,1000x-pad,750x1000,f8f8f8.jpg
 Bath Mat
 https://ih1.redbubble.net/image.{7}.{0}/ur,bathmat_flatlay_small,square,1000x1000.1.jpg
 https://ih1.redbubble.net/image.{7}.{0}/ur,bathmat_context_small,wide_portrait,750x1000.1.jpg
 https://ih1.redbubble.net/image.{7}.{0}/ur,bathmat_context_small,square,1000x1000.1.jpg
 https://ih1.redbubble.net/image.{7}.{0}/ur,bathmat_flatlay_context_small,wide_portrait,750x1000.1.jpg
 https://ih1.redbubble.net/image.{7}.{0}/ur,bathmat_detail_small,wide_portrait,750x1000.1.jpg
-https://www.redbubble.com/preview-reference-assets/products/bathmat_back.b11794179a2e1744067d8e45e5be91657a38b42ab6c574b1f880e72d129bf3a7.jpg
 https://ih1.redbubble.net/image.{7}.{0}/ur,bathmat_comparison,tall_portrait,750x1000.1.jpg
 Shower Curtain
 https://ih1.redbubble.net/image.{8}.{0}/ur,shower_curtain_closed,square,1000x1000.1.jpg
@@ -52,7 +146,15 @@ https://ih1.redbubble.net/image.{8}.{0}/ur,shower_curtain_closed_context,wide_po
 https://ih1.redbubble.net/image.{8}.{0}/ur,shower_curtain_closed_context,square,1000x1000.1.jpg
 https://ih1.redbubble.net/image.{8}.{0}/ur,shower_curtain_detail,wide_portrait,750x1000.1.jpg
 https://ih1.redbubble.net/image.{8}.{0}/ur,shower_curtain_open,wide_portrait,750x1000.1.jpg
-https://www.redbubble.com/preview-reference-assets/products/shower_curtain_eyelet.b37b1826e8a67ed9719dd73361e778555227250be7ecf9bda18d24653f41a8dd.jpg
+Duvet Cover
+https://ih1.redbubble.net/image.{8}.{0}/dc,1000x1000,twin,bed.jpg
+https://ih1.redbubble.net/image.{8}.{0}/dc,750x,twin,bed-pad,750x1000,f8f8f8.jpg
+Comforter
+https://ih1.redbubble.net/image.{8}.{0}/ur,comforter_top_king,square,1000x1000.1.jpg
+https://ih1.redbubble.net/image.{8}.{0}/ur,comforter_flatlay_twin,wide_portrait,750x1000.1.jpg
+https://ih1.redbubble.net/image.{8}.{0}/ur,comforter_lifestyle_twin,tall_portrait,750x1000.1.jpg
+https://ih1.redbubble.net/image.{8}.{0}/ur,comforter_folded_queen,wide_portrait,750x1000.1.jpg
+https://ih1.redbubble.net/image.{8}.{0}/ur,comforter_detail_queen,wide_portrait,750x1000.1.jpg
 Transparent Sticker
 https://ih1.redbubble.net/image.{9}.{0}/tst,small,845x845-pad,1000x1000,f8f8f8.jpg
 https://ih1.redbubble.net/image.{9}.{0}/tsss,small,product,750x1000.jpg
@@ -63,38 +165,28 @@ https://ih1.redbubble.net/image.{9}.{0}/st,small,845x845-pad,1000x1000,f8f8f8.jp
 https://ih1.redbubble.net/image.{9}.{0}/gsss,small,product,750x1000.jpg
 https://ih1.redbubble.net/image.{9}.{0}/gsss,small,product_square,1000x1000.jpg
 https://ih1.redbubble.net/image.{9}.{0}/gsss,small,wide_portrait,750x1000.1.jpg
+Sticker
+https://ih1.redbubble.net/image.{9}.{0}/st,small,845x845-pad,1000x1000,f8f8f8.jpg
+https://ih1.redbubble.net/image.{9}.{0}/sss,small,product,750x1000.jpg
+https://ih1.redbubble.net/image.{9}.{0}/sss,small,product_square,1000x1000.jpg
+https://ih1.redbubble.net/image.{9}.{0}/sss,small,wide_portrait,750x1000.1.jpg
 Clock
 https://ih1.redbubble.net/image.{10}.{0}/clkf,bamboo,white,1000x1000-bg,f8f8f8.jpg
 https://ih1.redbubble.net/image.{10}.{0}/clkc,bamboo,white,1000x1250-pad,750x1000,f8f8f8.jpg
 https://ih1.redbubble.net/image.{10}.{0}/clkc,bamboo,white,1000x1000-bg,f8f8f8.jpg
 https://ih1.redbubble.net/image.{10}.{0}/clk3q,bamboo,white,1000x-c,115,0,675,900.jpg
 https://ih1.redbubble.net/image.{10}.{0}/clkm,white,x800-pad,750x1000,f8f8f8.jpg
-Canvas Print
-https://ih1.redbubble.net/image.{5}.{0}/mp,840x830,matte,f8f8f8,t-pad,1000x1000,f8f8f8.jpg
-https://ih1.redbubble.net/image.{5}.{0}/ccp,small,product,750x1000.jpg
-https://ih1.redbubble.net/image.{5}.{0}/ccp,small,square_product,1000x1000.jpg
-https://ih1.redbubble.net/image.{5}.{0}/fcp,small,wall_texture,product,750x1000.jpg
-Classic T-Shirt
-https://ih1.redbubble.net/image.{3}.{0}/ra,classic_tee,x2000,101010:01c5ca27c6,front-c,200,112,1000,1000-bg,f8f8f8.jpg
-https://ih1.redbubble.net/image.{3}.{0}/ra,classic_tee,x2000,101010:01c5ca27c6,front-c,325,112,750,1000-bg,f8f8f8.jpg
-https://ih1.redbubble.net/image.{3}.{0}/ssrco,classic_tee,womens,101010:01c5ca27c6,front,tall_three_quarter,x1000-bg,f8f8f8.1.jpg
-https://ih1.redbubble.net/image.{3}.{0}/ssrco,classic_tee,womens,101010:01c5ca27c6,front,tall_portrait,x1000-bg,f8f8f8.1.jpg
-https://ih1.redbubble.net/preview/ssrco,classic_tee,womens,101010:01c5ca27c6,back,tall_portrait,x1000-bg,f8f8f8.1.jpg
-https://ih1.redbubble.net/image.{3}.{0}/ra,classic_tee,x1000,101010:01c5ca27c6,front-c,21,44,637,850-bg,f8f8f8.jpg
-https://ih1.redbubble.net/preview/ra,classic_tee,x1000,101010:01c5ca27c6,back-c,0,27,679,905-bg,f8f8f8.jpg
 Sleeveless Top
 https://ih1.redbubble.net/image.{11}.{0}/ctkr,x2200,front,black-c,250,163,1000,1000-bg,f8f8f8.jpg
 https://ih1.redbubble.net/image.{11}.{0}/ctkr,x2200,front,black-c,375,163,750,1000-bg,f8f8f8.jpg
 https://ih1.redbubble.net/image.{11}.{0}/ctkr,x2000,side,black-c,290,190,750,1000-bg,f8f8f8.jpg
 https://ih1.redbubble.net/image.{11}.{0}/ctkr,x1104,front,black-c,0,60,750,1000-bg,f8f8f8.jpg
 https://ih1.redbubble.net/image.{11}.{0}/ctkf,750x1000,black-pad,750x1000,f8f8f8.jpg
-https://www.redbubble.com/preview-reference-assets/products/contrast-tank-black-back.ac6c6d8da41d7171f54f63f8c8f31cb4aac16d23c829c99c0f840ab2bbc0ebd0.jpg
 Graphic T-Shirt Dress
 https://ih1.redbubble.net/image.{12}.{0}/gtdr,x1800,front,black-c,130,133,1000,1000-bg,f8f8f8.jpg
 https://ih1.redbubble.net/image.{12}.{0}/gtdr,x1800,front,black-c,255,133,750,1000-bg,f8f8f8.jpg
 https://ih1.redbubble.net/image.{12}.{0}/gtdr,x1800,side,black-c,280,135,750,1000-bg,f8f8f8.jpg
 https://ih1.redbubble.net/image.{12}.{0}/gtdf,x1000,black-pad,750x1000,f8f8f8.jpg
-https://www.redbubble.com/preview-reference-assets/products/graphic-t-shirt-dress-black-back.c155360afe32ed164c0d7aa73815484c45d7c90f1f13d0910d15a9727b637232.jpg
 A-Line Dress
 https://ih1.redbubble.net/image.{13}.{0}/aldr,x1700,front-c,60,103,1000,1000-bg,f8f8f8.jpg
 https://ih1.redbubble.net/image.{13}.{0}/aldr,x1700,front-c,185,103,750,1000-bg,f8f8f8.jpg
@@ -104,59 +196,32 @@ Drawstring Bag
 https://ih1.redbubble.net/image.{14}.{0}/drawstring_bag,x1000-pad,1000x1000,f8f8f8.jpg
 https://ih1.redbubble.net/image.{14}.{0}/drawstring_bag,x750-pad,750x1000,f8f8f8.jpg
 https://ih1.redbubble.net/image.{14}.{0}/flat_drawstring_bag,x550-pad,750x1000,f8f8f8.jpg
-Duvet Cover
-https://ih1.redbubble.net/image.{8}.{0}/dc,1000x1000,twin,bed.jpg
-https://ih1.redbubble.net/image.{8}.{0}/dc,750x,twin,bed-pad,750x1000,f8f8f8.jpg
-Framed Art Print
-https://ih1.redbubble.net/image.{5}.{0}/fp,840x830,black,off_white,box20,s,f8f8f8-pad,1000x1000,f8f8f8.jpg
-https://ih1.redbubble.net/image.{5}.{0}/cfp,small,black,off_white,box20,product,750x1000.jpg
-https://ih1.redbubble.net/image.{5}.{0}/cfp,small,black,off_white,box20,square_product,1000x1000.jpg
-https://ih1.redbubble.net/image.{5}.{0}/ffp,small,black,off_white,box20,wall_texture,product,750x1000.jpg
-https://www.redbubble.com/preview-reference-assets/products/frame_prints_static_colours.3dc0749d1268d28bd70459ea956a344689e84e09ae2a6a3291ed5383c33d2405.jpg
-https://www.redbubble.com/preview-reference-assets/products/frame_prints_static_finish.bc44c2018c97984af7771cf357c3dad8f5d3f83a64c0ec1da392217a7241ec0c.jpg
-https://www.redbubble.com/preview-reference-assets/products/frame_prints_static_mount.ee4d76ada14500ffa86b350b34603c2dfb7201852df8357d24fca0e064abe26a.jpg
-https://www.redbubble.com/preview-reference-assets/products/frame_prints_static_back.fe69c3d05b669186fdef11341e9a8672912d72f9cedd35216371046e6301f8bf.jpg
 Art Board Print
 https://ih1.redbubble.net/image.{15}.{0}/gbra,10x8,900x900.jpg
 https://ih1.redbubble.net/image.{15}.{0}/gbra,10x8,1000x1000-c,0,0,675,900.jpg
-Greeting Card
-https://ih1.redbubble.net/image.{5}.{0}/papergc,500x,w,f8f8f8-pad,1000x1000,f8f8f8.jpg
-https://ih1.redbubble.net/image.{5}.{0}/papergc,500x,w,f8f8f8-pad,750x1000,f8f8f8.jpg
 Hardcover Journal
 https://ih1.redbubble.net/image.{16}.{0}/hj,1000x-pad,1000x1000,f8f8f8.jpg
 https://ih1.redbubble.net/image.{16}.{0}/hj,750x-pad,750x1000,f8f8f8.jpg
 https://ih1.redbubble.net/image.{16}.{0}/hjo,1000x-pad,750x1000,f8f8f8.jpg
-Tri-blend T-Shirt
-https://ih1.redbubble.net/image.{3}.{0}/ra,triblend_tee,x2150,black_triblend,front-c,242,133,1000,1000-bg,f8f8f8.jpg
-https://ih1.redbubble.net/image.{3}.{0}/ra,triblend_tee,x2150,black_triblend,front-c,367,133,750,1000-bg,f8f8f8.jpg
-https://ih1.redbubble.net/image.{3}.{0}/ssrco,triblend_tee,womens,black_triblend,front,tall_three_quarter,x1000-bg,f8f8f8.1.jpg
-https://ih1.redbubble.net/image.{3}.{0}/ssrco,triblend_tee,womens,black_triblend,side,tall_portrait,x1000-bg,f8f8f8.1.jpg
-https://ih1.redbubble.net/preview/ra,triblend_tee,x1100,black_triblend,back-pad,750x1000,f8f8f8.jpg
-https://ih1.redbubble.net/preview/ssrco,triblend_tee,womens,black_triblend,back,tall_portrait,x1000-bg,f8f8f8.1.jpg
-Lightweight Hoodie
-https://ih1.redbubble.net/image.{3}.{0}/ssrco,lightweight_hoodie,mens,101010:01c5ca27c6,front,square_three_quarter,x1000-bg,f8f8f8.2.jpg
-https://ih1.redbubble.net/image.{3}.{0}/ssrco,lightweight_hoodie,mens,101010:01c5ca27c6,front,tall_three_quarter,x1000-bg,f8f8f8.2.jpg
-https://ih1.redbubble.net/image.{3}.{0}/ssrco,lightweight_hoodie,womens,101010:01c5ca27c6,front,tall_three_quarter,x1000-bg,f8f8f8.1.jpg
-https://ih1.redbubble.net/preview/ssrco,lightweight_hoodie,mens,101010:01c5ca27c6,back,tall_portrait,x1000-bg,f8f8f8.2.jpg
-https://ih1.redbubble.net/preview/ssrco,lightweight_hoodie,womens,101010:01c5ca27c6,back,tall_portrait,x1000-bg,f8f8f8.1.jpg
-Lightweight Sweatshirt
-https://ih1.redbubble.net/image.{3}.{0}/ssrco,lightweight_sweatshirt,mens,black_lightweight_raglan_sweatshirt,front,square_three_quarter,x1000-bg,f8f8f8.1.jpg
-https://ih1.redbubble.net/image.{3}.{0}/ssrco,lightweight_sweatshirt,mens,black_lightweight_raglan_sweatshirt,front,tall_three_quarter,x1000-bg,f8f8f8.1.jpg
-https://ih1.redbubble.net/image.{3}.{0}/ssrco,lightweight_sweatshirt,womens,black_lightweight_raglan_sweatshirt,front,tall_three_quarter,x1000-bg,f8f8f8.1.jpg
-https://ih1.redbubble.net/preview/ssrco,lightweight_sweatshirt,mens,black_lightweight_raglan_sweatshirt,back,tall_portrait,x1000-bg,f8f8f8.1.jpg
-https://ih1.redbubble.net/preview/ssrco,lightweight_sweatshirt,womens,black_lightweight_raglan_sweatshirt,back,tall_portrait,x1000-bg,f8f8f8.1.jpg
 Long T-Shirt
 https://ih1.redbubble.net/image.{17}.{0}/ssrco,long_t_shirt,mens,101010:01c5ca27c6,front,square_three_quarter,x1000-bg,f8f8f8.1.jpg
 https://ih1.redbubble.net/image.{17}.{0}/ssrco,long_t_shirt,mens,101010:01c5ca27c6,front,tall_three_quarter,x1000-bg,f8f8f8.1.jpg
-https://ih1.redbubble.net/preview/ssrco,long_t_shirt,mens,101010:01c5ca27c6,back,tall_portrait,x1000-bg,f8f8f8.1.jpg
 https://ih1.redbubble.net/image.{17}.{0}/ssrco,long_t_shirt,mens,101010:01c5ca27c6,side,tall_portrait,x1000-bg,f8f8f8.1.jpg
 https://ih1.redbubble.net/image.{17}.{0}/rco,long_t_shirt,flatlay,x1000,101010:01c5ca27c6,front-c,0,0,750,1000-bg,f8f8f8.jpg
-Pullover Hoodie
-https://ih1.redbubble.net/image.{3}.{0}/ssrco,mhoodie,mens,101010:01c5ca27c6,front,square_three_quarter,x1000-bg,f8f8f8.1.jpg
-https://ih1.redbubble.net/image.{3}.{0}/ssrco,mhoodie,mens,101010:01c5ca27c6,front,tall_three_quarter,x1000-bg,f8f8f8.1.jpg
-https://ih1.redbubble.net/image.{3}.{0}/ssrco,mhoodie,womens,101010:01c5ca27c6,front,tall_three_quarter,x1000-bg,f8f8f8.1.jpg
-https://ih1.redbubble.net/preview/ssrco,mhoodie,mens,101010:01c5ca27c6,back,tall_portrait,x1000-bg,f8f8f8.1.jpg
-https://ih1.redbubble.net/preview/ssrco,mhoodie,womens,101010:01c5ca27c6,back,tall_portrait,x1000-bg,f8f8f8.1.jpg
+Premium T-Shirt
+https://ih1.redbubble.net/image.{17}.{0}/ssrco,mens_premium_t_shirt,mens,101010:01c5ca27c6,front,square_three_quarter,x1000-bg,f8f8f8.1.jpg
+https://ih1.redbubble.net/image.{17}.{0}/ssrco,mens_premium_t_shirt,mens,101010:01c5ca27c6,front,tall_three_quarter,x1000-bg,f8f8f8.1.jpg
+https://ih1.redbubble.net/image.{17}.{0}/ssrco,mens_premium_t_shirt,mens,101010:01c5ca27c6,side,tall_portrait,x1000-bg,f8f8f8.1.jpg
+https://ih1.redbubble.net/image.{17}.{0}/rco,mens_premium_t_shirt,flatlay,x1000,101010:01c5ca27c6,front-c,0,0,750,1000-bg,f8f8f8.jpg
+https://ih1.redbubble.net/image.{17}.{0}/ssrco,mens_premium_t_shirt,mens,101010:01c5ca27c6,lifestyle,tall_portrait,x1000-bg,f8f8f8.1.jpg
+https://ih1.redbubble.net/image.{17}.{0}/rco,mens_premium_t_shirt,mens,x1000,101010:01c5ca27c6,packaging-bg,f8f8f8.jpg
+Premium Scoop T-Shirt
+https://ih1.redbubble.net/image.{17}.{0}/rco,womens_premium_t_shirt,womens,x1770,101010:01c5ca27c6,front-c,170,40,1000,1000-bg,f8f8f8.jpg
+https://ih1.redbubble.net/image.{17}.{0}/rco,womens_premium_t_shirt,womens,x1770,101010:01c5ca27c6,front-c,295,40,750,1000-bg,f8f8f8.jpg
+https://ih1.redbubble.net/image.{17}.{0}/rco,womens_premium_t_shirt,womens,x1000,101010:01c5ca27c6,side-c,0,0,750,1000-bg,f8f8f8.jpg
+https://ih1.redbubble.net/image.{17}.{0}/rco,womens_premium_t_shirt,flatlay,x1000,101010:01c5ca27c6,front-c,0,0,750,1000-bg,f8f8f8.jpg
+https://ih1.redbubble.net/image.{17}.{0}/rco,womens_premium_t_shirt,womens,x1000,101010:01c5ca27c6,lifestyle-c,0,0,750,1000-bg,f8f8f8.jpg
+https://ih1.redbubble.net/image.{17}.{0}/rco,womens_premium_t_shirt,womens,x1000,101010:01c5ca27c6,packaging-bg,f8f8f8.jpg
 iPad Snap Case
 https://ih1.redbubble.net/image.{18}.{0}/mwo,x1000,ipad_2_snap-pad,1000x1000,f8f8f8.jpg
 https://ih1.redbubble.net/image.{18}.{0}/mwo,x1000,ipad_2_snap-pad,750x1000,f8f8f8.jpg
@@ -166,95 +231,36 @@ https://ih1.redbubble.net/image.{19}.{0}/icr,iphone_11_soft,back,a,x1000-bg,f8f8
 https://ih1.redbubble.net/image.{19}.{0}/icr,iphone_11_soft,side,a,x1000-bg,f8f8f8.jpg
 https://ih1.redbubble.net/image.{19}.{0}/icr,iphone_11_soft,end,a,x1000-bg,f8f8f8.jpg
 https://ih1.redbubble.net/image.{19}.{0}/icr,iphone_xs_soft,flex,a,750x1000-bg,f8f8f8.1.jpg
+Samsung Galaxy Snap Case
+https://ih1.redbubble.net/image.{19}.{0}/icr,samsung_galaxy_s20_snap,back,a,x1000-pad,1000x1000,f8f8f8.1.jpg
+https://ih1.redbubble.net/image.{19}.{0}/icr,samsung_galaxy_s20_snap,back,a,x1000-bg,f8f8f8.1.jpg
+https://ih1.redbubble.net/image.{19}.{0}/icr,samsung_galaxy_s20_snap,side,a,x1000-bg,f8f8f8.1.jpg
+https://ih1.redbubble.net/image.{19}.{0}/icr,samsung_galaxy_s20_snap,end,a,x1000-bg,f8f8f8.1.jpg
 iPhone Wallet
 https://ih1.redbubble.net/image.{20}.{0}/wallet,1000x,iphone_6s_wallet-pad,1000x1000,f8f8f8.jpg
 https://ih1.redbubble.net/image.{20}.{0}/wallet,1000x,iphone_6s_wallet-pad,750x1000,f8f8f8.jpg
 https://ih1.redbubble.net/image.{20}.{0}/mwo,x900,iphone_6s_wallet-pad,750x1000,f8f8f8.jpg
-https://www.redbubble.com/preview-reference-assets/products/iphone-wallet-open-6.ecbf78954786548084b738cd22e3ffcdec4068100048b267025cff70d58d342d.jpg
-https://www.redbubble.com/preview-reference-assets/products/iphone-wallet-folded-6.ebee80c1130237a574e8688a36c1657823f7aa5ee96e6d4e162c03dbc0123450.jpg
-https://www.redbubble.com/preview-reference-assets/products/iphone-wallet-angled-6.ab97269e2a8a33a87891ccf3fe5488c97d923e20b8d60f08bdd143dd0290b028.jpg
 Laptop Skin
 https://ih1.redbubble.net/image.{21}.{0}/pd,x750,macbook_air_13-pad,1000x1000,f8f8f8.jpg
 https://ih1.redbubble.net/image.{21}.{0}/pd,x500,macbook_air_13-pad,750x1000,f8f8f8.jpg
 Laptop Sleeve
 https://ih1.redbubble.net/image.{21}.{0}/ls,13inch,x1000-c,90,0,1000,1000-bg,f8f8f8.jpg
 https://ih1.redbubble.net/image.{21}.{0}/ls,13inch,x750-pad,750x1000,f8f8f8.jpg
-Slim Fit T-Shirt
-https://ih1.redbubble.net/image.{3}.{0}/ra,unisex_tshirt,x2200,101010:01c5ca27c6,front-c,267,146,1000,1000-bg,f8f8f8.jpg
-https://ih1.redbubble.net/image.{3}.{0}/ra,unisex_tshirt,x2200,101010:01c5ca27c6,front-c,392,146,750,1000-bg,f8f8f8.jpg
-https://ih1.redbubble.net/image.{3}.{0}/ssrco,unisex_tshirt,womens,101010:01c5ca27c6,front,tall_three_quarter,x1000-bg,f8f8f8.jpg
-https://ih1.redbubble.net/image.{3}.{0}/ssrco,unisex_tshirt,womens,101010:01c5ca27c6,front,tall_portrait,x1000-bg,f8f8f8.jpg
-https://ih1.redbubble.net/preview/ssrco,unisex_tshirt,womens,101010:01c5ca27c6,back,tall_portrait,x1000-bg,f8f8f8.jpg
-https://ih1.redbubble.net/image.{3}.{0}/ra,unisex_tshirt,x1000,101010:01c5ca27c6,front-c,10,44,666,888-bg,f8f8f8.jpg
-https://ih1.redbubble.net/preview/ra,unisex_tshirt,x1000,101010:01c5ca27c6,back-c,10,44,666,888-bg,f8f8f8.jpg
-Baseball ¾ Sleeve T-Shirt
-https://ih1.redbubble.net/image.{3}.{0}/ra,raglan,x1950,black_white,front-c,160,90,1000,1000-bg,f8f8f8.jpg
-https://ih1.redbubble.net/image.{3}.{0}/ra,raglan,x1950,black_white,front-c,290,90,750,1000-bg,f8f8f8.jpg
-https://ih1.redbubble.net/preview/ra,raglan,x1950,black_white,back-c,290,90,750,1000-bg,f8f8f8.jpg
-Long Sleeve T-Shirt
-https://ih1.redbubble.net/image.{3}.{0}/ra,longsleeve,x2000,101010:01c5ca27c6,front-c,190,60,1000,1000-bg,f8f8f8.jpg
-https://ih1.redbubble.net/image.{3}.{0}/ra,longsleeve,x2000,101010:01c5ca27c6,front-c,315,60,750,1000-bg,f8f8f8.jpg
-https://ih1.redbubble.net/image.{3}.{0}/ssrco,longsleeve,womens,101010:01c5ca27c6,front,tall_three_quarter,750x1000-bg,f8f8f8.jpg
-https://ih1.redbubble.net/preview/ra,longsleeve,x1100,101010:01c5ca27c6,back-c,0,25,750,1000-bg,f8f8f8.jpg
-https://ih1.redbubble.net/preview/ssrco,longsleeve,womens,101010:01c5ca27c6,back,tall_portrait,750x1000-bg,f8f8f8.jpg
-Premium T-Shirt
-https://ih1.redbubble.net/image.{17}.{0}/ssrco,mens_premium_t_shirt,mens,101010:01c5ca27c6,front,square_three_quarter,x1000-bg,f8f8f8.1.jpg
-https://ih1.redbubble.net/image.{17}.{0}/ssrco,mens_premium_t_shirt,mens,101010:01c5ca27c6,front,tall_three_quarter,x1000-bg,f8f8f8.1.jpg
-https://ih1.redbubble.net/preview/ssrco,mens_premium_t_shirt,mens,101010:01c5ca27c6,back,tall_portrait,x1000-bg,f8f8f8.1.jpg
-https://ih1.redbubble.net/image.{17}.{0}/ssrco,mens_premium_t_shirt,mens,101010:01c5ca27c6,side,tall_portrait,x1000-bg,f8f8f8.1.jpg
-https://ih1.redbubble.net/image.{17}.{0}/rco,mens_premium_t_shirt,flatlay,x1000,101010:01c5ca27c6,front-c,0,0,750,1000-bg,f8f8f8.jpg
-https://ih1.redbubble.net/image.{17}.{0}/ssrco,mens_premium_t_shirt,mens,101010:01c5ca27c6,lifestyle,tall_portrait,x1000-bg,f8f8f8.1.jpg
-https://ih1.redbubble.net/image.{17}.{0}/rco,mens_premium_t_shirt,mens,x1000,101010:01c5ca27c6,packaging-bg,f8f8f8.jpg
-Premium Scoop T-Shirt
-https://ih1.redbubble.net/image.{17}.{0}/rco,womens_premium_t_shirt,womens,x1770,101010:01c5ca27c6,front-c,170,40,1000,1000-bg,f8f8f8.jpg
-https://ih1.redbubble.net/image.{17}.{0}/rco,womens_premium_t_shirt,womens,x1770,101010:01c5ca27c6,front-c,295,40,750,1000-bg,f8f8f8.jpg
-https://ih1.redbubble.net/preview/rco,womens_premium_t_shirt,womens,x1000,101010:01c5ca27c6,back-c,0,0,750,1000-bg,f8f8f8.jpg
-https://ih1.redbubble.net/image.{17}.{0}/rco,womens_premium_t_shirt,womens,x1000,101010:01c5ca27c6,side-c,0,0,750,1000-bg,f8f8f8.jpg
-https://ih1.redbubble.net/image.{17}.{0}/rco,womens_premium_t_shirt,flatlay,x1000,101010:01c5ca27c6,front-c,0,0,750,1000-bg,f8f8f8.jpg
-https://ih1.redbubble.net/image.{17}.{0}/rco,womens_premium_t_shirt,womens,x1000,101010:01c5ca27c6,lifestyle-c,0,0,750,1000-bg,f8f8f8.jpg
-https://ih1.redbubble.net/image.{17}.{0}/rco,womens_premium_t_shirt,womens,x1000,101010:01c5ca27c6,packaging-bg,f8f8f8.jpg
-V-Neck T-Shirt
-https://ih1.redbubble.net/image.{3}.{0}/ra,vneck,x1900,101010:01c5ca27c6,front-c,160,70,1000,1000-bg,f8f8f8.jpg
-https://ih1.redbubble.net/image.{3}.{0}/ra,vneck,x1900,101010:01c5ca27c6,front-c,290,70,750,1000-bg,f8f8f8.jpg
-https://ih1.redbubble.net/preview/ra,vneck,x1900,101010:01c5ca27c6,back-c,260,70,750,1000-bg,f8f8f8.jpg
-Metal Print
-https://ih1.redbubble.net/image.{5}.{0}/mp,840x860,gloss,f8f8f8,t-pad,1000x1000,f8f8f8.jpg
-https://ih1.redbubble.net/image.{5}.{0}/cmp,x_small,gloss,product,750x1000.jpg
-https://ih1.redbubble.net/image.{5}.{0}/cmp,x_small,gloss,square_product,1000x1000.jpg
-https://ih1.redbubble.net/image.{5}.{0}/fmp,x_small,gloss,wall_texture,product,750x1000.jpg
-Mini Skirt
-https://ih1.redbubble.net/image.{22}.{0}/pencil_skirt,x1000,front-c,378,0,871,871-bg,f8f8f8.jpg
-https://ih1.redbubble.net/image.{22}.{0}/pencil_skirt,x1000,front-c,468,0,701,935-bg,f8f8f8.jpg
-https://ih1.redbubble.net/image.{22}.{0}/pencil_skirt,x1000,side-c,430,0,750,1000-bg,f8f8f8.jpg
-https://ih1.redbubble.net/image.{22}.{0}/flat_pencil_skirt,x950-c,98,0,681,908-pad,750x1000,f8f8f8.jpg
-Photographic Print
-https://ih1.redbubble.net/image.{5}.{0}/pp,840x830-pad,1000x1000,f8f8f8.jpg
-https://ih1.redbubble.net/image.{5}.{0}/cpp,small,lustre,product,750x1000.jpg
-https://ih1.redbubble.net/image.{5}.{0}/cpp,small,lustre,square_product,1000x1000.jpg
-https://ih1.redbubble.net/image.{5}.{0}/fpp,small,lustre,wall_texture,product,750x1000.jpg
-Pin
-https://ih1.redbubble.net/image.{23}.{0}/ur,pin_large_front,square,1000x1000.jpg
-https://ih1.redbubble.net/image.{23}.{0}/ur,pin_small_front,wide_portrait,750x1000.jpg
-https://ih1.redbubble.net/image.{23}.{0}/ur,pin_small_front,square,1000x1000.jpg
-https://ih1.redbubble.net/image.{23}.{0}/ur,pin_small_back,tall_portrait,750x1000.jpg
-Postcard
-https://ih1.redbubble.net/image.{5}.{0}/paperpc,750x,w,f8f8f8-pad,1000x1000,f8f8f8.jpg
-https://ih1.redbubble.net/image.{5}.{0}/paperpc,500x,w,f8f8f8-pad,750x1000,f8f8f8.jpg
-Poster
-https://ih1.redbubble.net/image.{5}.{0}/poster,840x830,f8f8f8-pad,1000x1000,f8f8f8.jpg
-https://ih1.redbubble.net/image.{5}.{0}/cposter,small,product,750x1000.2.jpg
-https://ih1.redbubble.net/image.{5}.{0}/cposter,small,square_product,1000x1000.2.jpg
-https://ih1.redbubble.net/image.{5}.{0}/fposter,small,wall_texture,product,750x1000.jpg
 Zipper Pouch
 https://ih1.redbubble.net/image.{21}.{0}/pr,150x100,1000x-pad,1000x1000,f8f8f8.jpg
 https://ih1.redbubble.net/image.{21}.{0}/pr,150x100,750x1000-bg,f8f8f8.jpg
 https://ih1.redbubble.net/image.{21}.{0}/pr,size_comparison,750x1000-bg,f8f8f8.jpg
 https://ih1.redbubble.net/image.{21}.{0}/pr,150x100_props,750x1000-bg,f8f8f8.jpg
-Samsung Galaxy Snap Case
-https://ih1.redbubble.net/image.{19}.{0}/icr,samsung_galaxy_s20_snap,back,a,x1000-pad,1000x1000,f8f8f8.1.jpg
-https://ih1.redbubble.net/image.{19}.{0}/icr,samsung_galaxy_s20_snap,back,a,x1000-bg,f8f8f8.1.jpg
-https://ih1.redbubble.net/image.{19}.{0}/icr,samsung_galaxy_s20_snap,side,a,x1000-bg,f8f8f8.1.jpg
-https://ih1.redbubble.net/image.{19}.{0}/icr,samsung_galaxy_s20_snap,end,a,x1000-bg,f8f8f8.1.jpg
+Mini Skirt
+https://ih1.redbubble.net/image.{22}.{0}/pencil_skirt,x1000,front-c,378,0,871,871-bg,f8f8f8.jpg
+https://ih1.redbubble.net/image.{22}.{0}/pencil_skirt,x1000,front-c,468,0,701,935-bg,f8f8f8.jpg
+https://ih1.redbubble.net/image.{22}.{0}/pencil_skirt,x1000,side-c,430,0,750,1000-bg,f8f8f8.jpg
+https://ih1.redbubble.net/image.{22}.{0}/flat_pencil_skirt,x950-c,98,0,681,908-pad,750x1000,f8f8f8.jpg
+Pin
+https://ih1.redbubble.net/image.{23}.{0}/ur,pin_large_front,square,1000x1000.jpg
+https://ih1.redbubble.net/image.{23}.{0}/ur,pin_small_front,wide_portrait,750x1000.jpg
+https://ih1.redbubble.net/image.{23}.{0}/ur,pin_small_front,square,1000x1000.jpg
+https://ih1.redbubble.net/image.{23}.{0}/ur,pin_small_back,tall_portrait,750x1000.jpg
 Scarf
 https://ih1.redbubble.net/image.{24}.{0}/scarf,x1050-pad,1000x1000,f8f8f8.jpg
 https://ih1.redbubble.net/image.{24}.{0}/scarf,x900-pad,750x1000,f8f8f8.jpg
@@ -262,7 +268,6 @@ https://ih1.redbubble.net/image.{24}.{0}/scarfflat,800x-pad,750x1000,f8f8f8.jpg
 Spiral Notebook
 https://ih1.redbubble.net/image.{25}.{0}/sn,x1000-pad,1000x1000,f8f8f8.jpg
 https://ih1.redbubble.net/image.{25}.{0}/sn,x1000-pad,750x1000,f8f8f8.jpg
-https://www.redbubble.com/preview-reference-assets/products/spiral_notebook_flatlay_line.01b701bd454380457e80c4f075bff35b1bbb61b78680ba75434cef5f4cce5aa0.jpg
 Classic Mug
 https://ih1.redbubble.net/image.{26}.{0}/mug,standard,x1000,right-pad,1000x1000,f8f8f8.jpg
 https://ih1.redbubble.net/image.{26}.{0}/ur,mug_lifestyle,tall_portrait,750x1000.jpg
@@ -271,92 +276,44 @@ https://ih1.redbubble.net/image.{26}.{0}/ur,mug_double_lifestyle,wide_portrait,7
 https://ih1.redbubble.net/image.{26}.{0}/mug,standard,x1000,left-pad,750x1000,f8f8f8.jpg
 https://ih1.redbubble.net/image.{26}.{0}/mug,standard,x1000,center-pad,750x1000,f8f8f8.jpg
 https://ih1.redbubble.net/image.{26}.{0}/mug,standard,x1000,right-pad,750x1000,f8f8f8.jpg
-Sticker
-https://ih1.redbubble.net/image.{9}.{0}/st,small,845x845-pad,1000x1000,f8f8f8.jpg
-https://ih1.redbubble.net/image.{9}.{0}/sss,small,product,750x1000.jpg
-https://ih1.redbubble.net/image.{9}.{0}/sss,small,product_square,1000x1000.jpg
-https://ih1.redbubble.net/image.{9}.{0}/sss,small,wide_portrait,750x1000.1.jpg
-Pullover Sweatshirt
-https://ih1.redbubble.net/image.{3}.{0}/ra,sweatshirt,x1850,101010:01c5ca27c6,front-c,105,45,1000,1000-bg,f8f8f8.jpg
-https://ih1.redbubble.net/image.{3}.{0}/ra,sweatshirt,x1850,101010:01c5ca27c6,front-c,230,45,750,1000-bg,f8f8f8.jpg
-https://ih1.redbubble.net/image.{3}.{0}/ssrco,pullover,womens,101010:01c5ca27c6,front,tall_three_quarter,750x1000-bg,f8f8f8.jpg
-https://ih1.redbubble.net/preview/ra,sweatshirt,x1050,101010:01c5ca27c6,back-c,0,0,700,980-pad,750x1000,f8f8f8.jpg
-https://ih1.redbubble.net/preview/ssrco,pullover,womens,101010:01c5ca27c6,back,tall_portrait,750x1000-bg,f8f8f8.jpg
-Tapestry
-https://ih1.redbubble.net/image.{6}.{0}/tapestry,1200x-pad,1000x1000,f8f8f8.jpg
-https://ih1.redbubble.net/image.{6}.{0}/ur,tapestry_lifestyle_small,wide_portrait,750x1000.jpg
-https://ih1.redbubble.net/image.{6}.{0}/ur,tapestry_lifestyle_small,square,1000x1000.jpg
-https://ih1.redbubble.net/image.{6}.{0}/tapestry,1000x-pad,750x1000,f8f8f8.jpg
-Tank Top
-https://ih1.redbubble.net/image.{3}.{0}/ra,tank,x1850,101010:01c5ca27c6,front-c,95,35,1000,1000-bg,f8f8f8.jpg
-https://ih1.redbubble.net/image.{3}.{0}/ra,tank,x1850,101010:01c5ca27c6,front-c,220,35,750,1000-bg,f8f8f8.jpg
-https://ih1.redbubble.net/preview/ra,tank,x1850,101010:01c5ca27c6,back-c,220,35,750,1000-bg,f8f8f8.jpg
 Throw Pillow
 https://ih1.redbubble.net/image.{27}.{0}/throwpillow,small,1000x-bg,f8f8f8-c,0,200,1000,1000.jpg
 https://ih1.redbubble.net/image.{27}.{0}/throwpillow,small,750x1000-bg,f8f8f8.jpg
 https://ih1.redbubble.net/image.{27}.{0}/throwpillow,detail,750x1000-bg,f8f8f8.jpg
+All Over Print Tote Bag
+https://ih1.redbubble.net/image.{27}.{0}/tb,1400x1400,small-c,1,330,1000,1000-bg,f8f8f8.jpg
+https://ih1.redbubble.net/image.{27}.{0}/tb,1000x1000,small-pad,750x1000,f8f8f8.jpg
+https://ih1.redbubble.net/image.{27}.{0}/tb,1000x1000,small-pad,1000x1000,f8f8f8.jpg
 Floor Pillow
 https://ih1.redbubble.net/image.{28}.{0}/throwpillow,36x36,1000x-bg,f8f8f8-c,0,200,1000,1000.jpg
 https://ih1.redbubble.net/image.{28}.{0}/throwpillow,36x36,750x1000-bg,f8f8f8.jpg
 https://ih1.redbubble.net/image.{28}.{0}/throwpillow,detail,750x1000-bg,f8f8f8.jpg
 https://ih1.redbubble.net/image.{28}.{0}/throwpillow,secondary_36x36,750x1000-bg,f8f8f8.jpg
 https://ih1.redbubble.net/image.{28}.{0}/throwpillow,zoom_36x36,750x1000-bg,f8f8f8.jpg
-All Over Print Tote Bag
-https://ih1.redbubble.net/image.{27}.{0}/tb,1400x1400,small-c,1,330,1000,1000-bg,f8f8f8.jpg
-https://ih1.redbubble.net/image.{27}.{0}/tb,1000x1000,small-pad,750x1000,f8f8f8.jpg
-https://ih1.redbubble.net/image.{27}.{0}/tb,1000x1000,small-pad,1000x1000,f8f8f8.jpg
 Travel Mug
 https://ih1.redbubble.net/image.{29}.{0}/mug,travel,x1000,center-pad,1000x1000,f8f8f8.jpg
 https://ih1.redbubble.net/image.{29}.{0}/mug,travel,x1000,center-pad,750x1000,f8f8f8.jpg
 https://ih1.redbubble.net/image.{29}.{0}/mug,travel,x1000,right-pad,750x1000,f8f8f8.jpg
 https://ih1.redbubble.net/image.{29}.{0}/mug,travel,x1000,left-pad,750x1000,f8f8f8.jpg
 https://ih1.redbubble.net/image.{29}.{0}/mug,travel,x1000,back-pad,750x1000,f8f8f8.jpg
-Fitted Scoop T-Shirt
-https://ih1.redbubble.net/image.{3}.{0}/ra,fitted_scoop,x2000,101010:01c5ca27c6,front-c,160,143,1000,1000-bg,f8f8f8.jpg
-https://ih1.redbubble.net/image.{3}.{0}/ra,fitted_scoop,x2000,101010:01c5ca27c6,front-c,285,143,750,1000-bg,f8f8f8.jpg
-https://ih1.redbubble.net/preview/ra,fitted_scoop,x2000,101010:01c5ca27c6,back-c,305,143,750,1000-bg,f8f8f8.jpg
-Fitted T-Shirt
-https://ih1.redbubble.net/image.{3}.{0}/ra,womens_tshirt,x1900,101010:01c5ca27c6,front-c,140,125,1000,1000-bg,f8f8f8.jpg
-https://ih1.redbubble.net/image.{3}.{0}/ra,womens_tshirt,x1900,101010:01c5ca27c6,front-c,265,125,750,1000-bg,f8f8f8.jpg
-https://ih1.redbubble.net/preview/ra,womens_tshirt,x1900,101010:01c5ca27c6,back-c,275,125,750,1000-bg,f8f8f8.jpg
-Racerback Tank Top
-https://ih1.redbubble.net/image.{3}.{0}/ssrco,racerback,womens,101010:01c5ca27c6,front,square_three_quarter,x1000-bg,f8f8f8.1.jpg
-https://ih1.redbubble.net/image.{3}.{0}/ssrco,racerback,womens,101010:01c5ca27c6,front,tall_three_quarter,x1000-bg,f8f8f8.1.jpg
-https://ih1.redbubble.net/preview/ssrco,racerback,womens,101010:01c5ca27c6,back,tall_portrait,x1000-bg,f8f8f8.1.jpg
-Zipped Hoodie
-https://ih1.redbubble.net/image.{3}.{0}/ssrco,mhoodiez,mens,101010:01c5ca27c6,front,square_three_quarter,1000x1000-bg,f8f8f8.jpg
-https://ih1.redbubble.net/image.{3}.{0}/ssrco,mhoodiez,mens,101010:01c5ca27c6,front,tall_three_quarter,750x1000-bg,f8f8f8.jpg
-https://ih1.redbubble.net/image.{3}.{0}/ssrco,mhoodiez,womens,101010:01c5ca27c6,front,tall_three_quarter,750x1000-bg,f8f8f8.jpg
-https://ih1.redbubble.net/preview/ssrco,mhoodiez,mens,101010:01c5ca27c6,back,tall_portrait,750x1000-bg,f8f8f8.jpg
-https://ih1.redbubble.net/preview/ssrco,mhoodiez,womens,101010:01c5ca27c6,back,tall_portrait,750x1000-bg,f8f8f8.jpg
 Water Bottle
 https://ih1.redbubble.net/image.{30}.{0}/ur,water_bottle_metal_lid_on,square,1000x1000.2.jpg
 https://ih1.redbubble.net/image.{30}.{0}/ur,water_bottle_metal_lid_on,wide_portrait,750x1000.2.jpg
 https://ih1.redbubble.net/image.{30}.{0}/ur,water_bottle_metal_lid_off,tall_portrait,750x1000.2.jpg
 https://ih1.redbubble.net/image.{30}.{0}/ur,water_bottle_metal_detail,wide_portrait,750x1000.2.jpg
 https://ih1.redbubble.net/image.{30}.{0}/ur,water_bottle_metal_size_comparison,tall_portrait,750x1000.2.jpg
-Coasters (Set of 4)
-https://ih1.redbubble.net/image.{4}.{0}/ur,coaster_pack_4_flatlay,square,1000x1000.2.jpg
-https://ih1.redbubble.net/image.{4}.{0}/ur,coaster_pack_4_flatlay,wide_portrait,750x1000.1.jpg
-https://ih1.redbubble.net/image.{4}.{0}/ur,coaster_pack_4_lifestyle,wide_portrait,750x1000.1.jpg
-https://www.redbubble.com/preview-reference-assets/products/coaster_back.cc34d6a3611eb54ff8648d9e9f7adec50b8d94ce59e208369e8d124526bc7ff2.jpg
-https://ih1.redbubble.net/image.{4}.{0}/ur,coaster_pack_4_stack,wide_portrait,750x1000.1.jpg
 Canvas Mounted Print
 https://ih1.redbubble.net/image.{31}.{0}/ur,mounted_print_canvas_portrait_small_front,square,1000x1000.1.jpg
 https://ih1.redbubble.net/image.{31}.{0}/ur,mounted_print_canvas_portrait_small_lifestyle,tall_portrait,750x1000.1.jpg
 https://ih1.redbubble.net/image.{31}.{0}/ur,mounted_print_canvas_portrait_small_lifestyle,square,1000x1000.1.jpg
 https://ih1.redbubble.net/image.{31}.{0}/ur,mounted_print_canvas_portrait_small_front,wide_portrait,750x1000.1.jpg
 https://ih1.redbubble.net/image.{31}.{0}/ur,mounted_print_canvas_portrait_small_detail,wide_portrait,750x1000.1.jpg
-https://www.redbubble.com/preview-reference-assets/products/mounted_print_canvas_portrait_small_back.ad7aa5b300c4b178339650fb1809902a2ba20994397079ed49c36928193c971d.png
-https://www.redbubble.com/preview-reference-assets/products/mounted_print_canvas_portrait_size_comparison_back.cd8d8311a89bd901014067e7925a2e33b2f9bde80c3d131f8491d213a20726d0.png
 Wood Mounted Print
 https://ih1.redbubble.net/image.{31}.{0}/ur,mounted_print_wood_portrait_small_front,square,1000x1000.1.jpg
 https://ih1.redbubble.net/image.{31}.{0}/ur,mounted_print_wood_portrait_small_lifestyle,tall_portrait,750x1000.1.jpg
 https://ih1.redbubble.net/image.{31}.{0}/ur,mounted_print_wood_portrait_small_lifestyle,square,1000x1000.1.jpg
 https://ih1.redbubble.net/image.{31}.{0}/ur,mounted_print_wood_portrait_small_front,wide_portrait,750x1000.1.jpg
 https://ih1.redbubble.net/image.{31}.{0}/ur,mounted_print_wood_portrait_small_detail,wide_portrait,750x1000.1.jpg
-https://www.redbubble.com/preview-reference-assets/products/mounted_print_wood_portrait_small_back.fc3627099ea39c42ce9a12dd089a2ff18ab60359ca9334d4e518397ff366515f.png
-https://www.redbubble.com/preview-reference-assets/products/mounted_print_wood_portrait_size_comparison_back.acba7a4cb0c954d1041a0349c11430fea3e819210861ff80b16256b361140e86.png
 Cotton Tote Bag
 https://ih1.redbubble.net/image.{32}.{0}/ssrco,tote,cotton,canvas_creme,flatlay,square,1000x1000-bg,f8f8f8.1.jpg
 https://ih1.redbubble.net/image.{32}.{0}/ssrco,tote,cotton,canvas_creme,lifestyle,tall_portrait,750x1000-bg,f8f8f8.1.jpg
@@ -370,15 +327,8 @@ https://ih1.redbubble.net/image.{33}.{0}/ur,socks_flatlay_medium,tall_portrait,7
 https://ih1.redbubble.net/image.{33}.{0}/ur,socks_size_comparison_medium,tall_portrait,750x1000-bg,f8f8f8.1.jpg
 https://ih1.redbubble.net/image.{33}.{0}/ur,socks_male_front_medium,tall_portrait,750x1000-bg,f8f8f8.1.jpg
 https://ih1.redbubble.net/image.{33}.{0}/ur,socks_female_back_medium,tall_portrait,750x1000-bg,f8f8f8.4.jpg
-Comforter
-https://ih1.redbubble.net/image.{8}.{0}/ur,comforter_top_king,square,1000x1000.1.jpg
-https://ih1.redbubble.net/image.{8}.{0}/ur,comforter_flatlay_twin,wide_portrait,750x1000.1.jpg
-https://ih1.redbubble.net/image.{8}.{0}/ur,comforter_lifestyle_twin,tall_portrait,750x1000.1.jpg
-https://ih1.redbubble.net/image.{8}.{0}/ur,comforter_folded_queen,wide_portrait,750x1000.1.jpg
-https://ih1.redbubble.net/image.{8}.{0}/ur,comforter_detail_queen,wide_portrait,750x1000.1.jpg
 Mask
 https://ih1.redbubble.net/image.{34}.{0}/ur,mask_flatlay_front,product,1000x1000.jpg
 https://ih1.redbubble.net/image.{34}.{0}/ur,mask_three_quarter,tall_portrait,750x1000.jpg
 https://ih1.redbubble.net/image.{34}.{0}/ur,mask_three_quarter,square,1000x1000.jpg
 https://ih1.redbubble.net/image.{34}.{0}/ur,mask_flatlay_front,wide_portrait,750x1000.jpg
-https://www.redbubble.com/preview-reference-assets/products/mask_flatlay_back.1d8d73430210e96dde181af1f092a19828383e3bc706adb0fe4ad6cdf3248ec4.jpg

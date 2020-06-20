@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Redbubble Get Promotional Image URLs
 // @namespace    http://tampermonkey.net/
-// @version      1.0.2
+// @version      1.0.3
 // @description  Gets urls for all promo images from a RedBubble promotion page and saves a txt file contianing urls
 // @author       Dylan Banta
 // @match        https://www.redbubble.com/studio/promote/*
@@ -16,22 +16,19 @@
 // @run-at document-end
 // ==/UserScript==
 
-//Global vars
-var btnCount = 0;
-var title;
-var outputArr = [];
-var productArr = [];
-
-//Calls custom log util
-function log(logs, forceOn) {
-    var call = log.caller.name; //get caller function
-    var debug = false;
-    logger(logs, debug, call, forceOn);
-}
+var productNum = 1;
+var urlArr = [];
 
 //Custom css
 var cssTxt = GM_getResourceText("customCSS");
 GM_addStyle(cssTxt);
+
+//Calls custom log util
+function log(logs, forceOn) {
+    var call = log.caller.name; //get caller function
+    var debug = true;
+    logger(logs, debug, call, forceOn);
+}
 
 //will be run when script loads
 function run() {
@@ -45,8 +42,6 @@ function run() {
 function createSaveBtn(select) {
     log("createSaveBtn Enter", true);
     var saveButtonElement = '<div><input type="button" value="Save All" class="saveBtn"/></div>'; //saveBtn html
-    title = $(".node_modules--redbubble-design-system-react-Box-styles__box--206r9.node_modules--redbubble-design-system-react-Text-styles__text--NLf2i.node_modules--redbubble-design-system-react-Text-styles__display1--2XY2m").text().replace(/ /g,"_") + "_";
-    log("title | " + title);
     //run createElements with saveButtonElement as element, and select as append location
     createElements(saveButtonElement, select);
     //Add save() function to btn click
@@ -55,101 +50,62 @@ function createSaveBtn(select) {
     });
 }
 
-//saveBtn function
 async function save() {
+    log("save Enter", true);
+
     // Select the buttons that open the download menu from the DOM
-    const $buttons = document.querySelectorAll(".node_modules--redbubble-design-system-react-Button-styles__small--127Kw");
+    const buttons = document.querySelectorAll(".node_modules--redbubble-design-system-react-Button-styles__small--127Kw");
     // For every button found, run the following
 
-    var imgArr = [];
+    const productArr = [1, 2, 3, 5, 6, 7, 8, 9, 10, 12, 15, 16, 17, 18, 21, 23, 27, 29, 47, 31, 32, 41, 43, 48, 49, 50, 55, 56, 58, 63, 65, 67, 70];
 
-    for (const $button of $buttons) {
-        if (btnCount != 0) {
-            // Click the button
-            log($button);
-            $button.click();
-            // Wait 50ms because menu doesn't immediately open
-            await sleep(50);
-            // Select the download button (its really a list item) from the DOM
-            const $download = document.querySelector("li[id$=item-0]");
-            // Click the download button
-            $download.click();
-            // Do everything needed when a modal is opened
-            await modal()
-            // Wait 50ms before performing the next iteration
-            await sleep(50);
-            btnCount++;
-        } else {
-            btnCount++;
+    for (var i = 0; i < buttons.length; i++) {
+        if (i != 0) {
+            for (var j = 0; j < productArr.length; j++) {
+                if (i == productArr[j]) {
+                    buttons[i].click();
+                    await sleep(50);
+                    const download = document.querySelector("li[id$=item-0]");
+                    download.click();
+                    await modal();
+                    await sleep(50);
+                }
+            }
         }
     }
 
-    var fileData;
-
-    for (var i = 0; i < outputArr.length; i++) {
-		var output = outputArr[i];
-		
-		if(i == 0){
-			fileData = productArr[i];
+	var outputTxt;
+    for (var k = 0; k < urlArr.length; k++) {
+        log("urlArr["+k+"]" + urlArr[k]);
+		if(k == 0){
+			outputTxt = urlArr[k];
+			/*
+			outputTxt.push(urlArr[k]);
+			outputTxt.push("\n");
+			*/
 		} else {
-			fileData = fileData + "\n" + productArr[i];
+			outputTxt = outputTxt + "\n" + urlArr[k];
 		}
-		
-        for (var j = 0; j < output.length; j++) {
-            log("outputArr[" + i + "][" + j + "] | " + output[j], true);
-            fileData = fileData + "\n" + output[j];
-        }
     }
-	var urlData = window.location.href.split("/");
-	var productID = urlData[urlData.length-1];
-    saveLocalFile(fileData, title +  productID + "_urls.txt");
 
+	const urlData = window.location.href.split("/");
+	const productID = urlData[urlData.length-1];
+
+	saveLocalFile(outputTxt, productID + "_urls.txt");
 }
 
-function saveToFile(data) {
-    log("saveToFile Enter");
-    var userInput = document.getElementById("myText").value;
-    var txt = getCurrentProductID + "_product_urls.txt";
-    var blob = new Blob([data], {
-        type: "text/plain;charset=utf-8"
-    });
-    saveAs(blob, txt);
-}
-
-/*
-This function runs every time a new modal is opened
-It is defined with the async keyword which lets us use await inside the function
- */
 async function modal() {
-
-    var modalArr = [];
-    // Wait for 1.5 seconds for that dumb loading icon to go away
-    await sleep(2000);
-    // Select the modal element from the DOM
-    const $modal = document.querySelector(".node_modules--redbubble-design-system-react-Modal-ModalCard-styles__card--zujT9");
-    // Select all the img elements from the modal element
-	
-	const product = $(".node_modules--redbubble-design-system-react-Box-styles__box--206r9.node_modules--redbubble-design-system-react-Text-styles__text--NLf2i.node_modules--redbubble-design-system-react-Text-styles__display2--3ZwPH.node_modules--redbubble-design-system-react-Box-styles__display-block--2XANJ").text();
-	
-	
-    const $images = $modal.querySelectorAll("img");
-    // Get the last image found and scroll it into view to lazy load all the images in the modal
-    $images[$images.length - 1].scrollIntoView({
-        behavior: "smooth"
-    });
-    // Wait 1 second for the images to finish loading
-    await sleep(1000);
-    // For each image element in the array (technically an array-like object), log the src attribute of the image
-    $images.forEach(img => {
-        var sourceImg = img.getAttribute("src");
-        modalArr.push(sourceImg);
-    })
-	productArr.push(product);
-    outputArr.push(modalArr);
-    // Select the close button from the DOM
-    const $close = document.querySelector("button[aria-label='Dismiss modal']")
-        // Click the close button
-        $close.click();
+    const modal = document.querySelector(".node_modules--redbubble-design-system-react-Modal-ModalCard-styles__card--zujT9");
+    await sleep(2000); //Wait for modal to load
+    var productTitle = $(".node_modules--redbubble-design-system-react-Box-styles__box--206r9.node_modules--redbubble-design-system-react-Text-styles__text--NLf2i.node_modules--redbubble-design-system-react-Text-styles__display2--3ZwPH.node_modules--redbubble-design-system-react-Box-styles__display-block--2XANJ").text();
+    log("Product #" + productNum + " | " + productTitle);
+    const images = modal.querySelector("img");
+    const sourceImg = images.getAttribute("src");
+    urlArr.push(sourceImg);
+    const close = document.querySelector("button[aria-label='Dismiss modal']");
+    close.click();
+    productNum++;
 }
+
 //When script loads run();
 run();

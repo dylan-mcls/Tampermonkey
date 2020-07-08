@@ -5,11 +5,12 @@
 // @description  try to take over the world!
 // @author       Fuzzyketchup [2206068]
 // @match        https://www.torn.com/trade.php
+// @require      https://code.jquery.com/jquery-3.5.1.min.js
 // @grant        none
 // ==/UserScript==
 
 function onLoad(){
-    console.log("Test data");
+
 }
 
 onLoad();
